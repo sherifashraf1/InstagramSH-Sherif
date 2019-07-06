@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Likes-->
+        <scene sceneID="DJq-tE-YNm">
+            <objects>
+                <viewController id="E7H-Kd-Nnz" customClass="LikeViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paA-fe-jfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yR0-nK-b1N"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Likes" id="ZSA-vH-mYA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZn-9n-MCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="1114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mxN-Mf-X5t">
+            <objects>
+                <navigationController storyboardIdentifier="LikesBarNav" automaticallyAdjustsScrollViewInsets="NO" id="WB1-sU-oCX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="like_unselected" selectedImage="like_selected" id="OfA-EX-zOx" userLabel="LikeItem">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GbD-ic-2gM">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E7H-Kd-Nnz" kind="relationship" relationship="rootViewController" id="fKy-Sa-s65"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVh-Uy-3X0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="like_selected" width="22" height="19"/>
+        <image name="like_unselected" width="22" height="18.5"/>
+    </resources>
+</document>

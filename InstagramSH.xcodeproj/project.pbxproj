@@ -7,21 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */; };
+		E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DF40C22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift */; };
 		E065E45722CCCA0500111039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E45622CCCA0500111039 /* AppDelegate.swift */; };
-		E065E45922CCCA0500111039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E45822CCCA0500111039 /* ViewController.swift */; };
 		E065E45C22CCCA0500111039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065E45A22CCCA0500111039 /* Main.storyboard */; };
 		E065E45E22CCCA0600111039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E065E45D22CCCA0600111039 /* Assets.xcassets */; };
 		E065E46122CCCA0600111039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */; };
+		E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */; };
+		E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */; };
+		E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6222CE919100E6301D /* FacebookCell.swift */; };
+		E0AD3BF222D0E34200A8A4CD /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */; };
+		E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */; };
+		E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3189122CD1328001681DC /* SignUpViewController.swift */; };
+		E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */; };
+		E0DC7DF622CFF011007AD011 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF522CFF011007AD011 /* SearchViewController.swift */; };
+		E0DC7DF822CFF028007AD011 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF722CFF028007AD011 /* PlusViewController.swift */; };
+		E0DC7DFA22CFF036007AD011 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF922CFF036007AD011 /* LikeViewController.swift */; };
+		E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */; };
+		E0E2145C22D008690061AA34 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2145A22D008690061AA34 /* TabBar.storyboard */; };
+		E0E2146422D00CBE0061AA34 /* HomeBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146222D00CBE0061AA34 /* HomeBar.storyboard */; };
+		E0E2146622D00CD30061AA34 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146522D00CD30061AA34 /* SearchBar.storyboard */; };
+		E0E2146922D00CEA0061AA34 /* CameraBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146722D00CEA0061AA34 /* CameraBar.storyboard */; };
+		E0E2146B22D00D080061AA34 /* LikesBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146A22D00D080061AA34 /* LikesBar.storyboard */; };
+		E0E2146E22D00D200061AA34 /* ProfileBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146C22D00D200061AA34 /* ProfileBar.storyboard */; };
+		E0E2147522D038F20061AA34 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */; };
+		E0E2147722D046070061AA34 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */; };
+		E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E9AD2322CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift */; };
+		E0E9AD2622CE21C400C631C8 /* EnterConformationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E9AD2522CE21C400C631C8 /* EnterConformationCodeViewController.swift */; };
+		E0E9AD2822CE2A2100C631C8 /* SignUpWithPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E9AD2722CE2A2100C631C8 /* SignUpWithPhoneViewController.swift */; };
+		E0E9AD2A22CE2E9C00C631C8 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E9AD2922CE2E9C00C631C8 /* CreateUserNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinedFacebookFriendsViewController.swift; sourceTree = "<group>"; };
+		E05DF40C22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneOrEmailSignUPViewController.swift; sourceTree = "<group>"; };
 		E065E45322CCCA0400111039 /* InstagramSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E065E45622CCCA0500111039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E065E45822CCCA0500111039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E065E45B22CCCA0500111039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E065E45D22CCCA0600111039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E065E46022CCCA0600111039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E065E46222CCCA0600111039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
+		E07ABE6222CE919100E6301D /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
+		E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E0C3189122CD1328001681DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0DC7DF522CFF011007AD011 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E0DC7DF722CFF028007AD011 /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
+		E0DC7DF922CFF036007AD011 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E0E2145B22D008690061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
+		E0E2146322D00CBE0061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/InstagramSH/Base.lproj/HomeBar.storyboard; sourceTree = "<group>"; };
+		E0E2146522D00CD30061AA34 /* SearchBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
+		E0E2146822D00CEA0061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/InstagramSH/Base.lproj/CameraBar.storyboard; sourceTree = "<group>"; };
+		E0E2146A22D00D080061AA34 /* LikesBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LikesBar.storyboard; sourceTree = "<group>"; };
+		E0E2146D22D00D200061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/InstagramSH/Base.lproj/ProfileBar.storyboard; sourceTree = "<group>"; };
+		E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0E9AD2322CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureButtonsWithTextFields.swift; sourceTree = "<group>"; };
+		E0E9AD2522CE21C400C631C8 /* EnterConformationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterConformationCodeViewController.swift; sourceTree = "<group>"; };
+		E0E9AD2722CE2A2100C631C8 /* SignUpWithPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithPhoneViewController.swift; sourceTree = "<group>"; };
+		E0E9AD2922CE2E9C00C631C8 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +103,61 @@
 			isa = PBXGroup;
 			children = (
 				E065E45622CCCA0500111039 /* AppDelegate.swift */,
-				E065E45822CCCA0500111039 /* ViewController.swift */,
-				E065E45A22CCCA0500111039 /* Main.storyboard */,
+				E0DC7DF222CFDCEB007AD011 /* SignInAndSignUpControllers */,
+				E0E2147222D0385B0061AA34 /* TabBarControllers */,
+				E0E2147322D038880061AA34 /* View */,
 				E065E45D22CCCA0600111039 /* Assets.xcassets */,
+				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
+				E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */,
+				E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */,
+				E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */,
 				E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */,
 				E065E46222CCCA0600111039 /* Info.plist */,
 			);
 			path = InstagramSH;
+			sourceTree = "<group>";
+		};
+		E0DC7DF222CFDCEB007AD011 /* SignInAndSignUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */,
+				E0C3189122CD1328001681DC /* SignUpViewController.swift */,
+				E05DF40C22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift */,
+				E0E9AD2322CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift */,
+				E0E9AD2522CE21C400C631C8 /* EnterConformationCodeViewController.swift */,
+				E0E9AD2722CE2A2100C631C8 /* SignUpWithPhoneViewController.swift */,
+				E0E9AD2922CE2E9C00C631C8 /* CreateUserNameViewController.swift */,
+				E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */,
+				E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */,
+				E07ABE6222CE919100E6301D /* FacebookCell.swift */,
+			);
+			path = SignInAndSignUpControllers;
+			sourceTree = "<group>";
+		};
+		E0E2147222D0385B0061AA34 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */,
+				E0DC7DF522CFF011007AD011 /* SearchViewController.swift */,
+				E0DC7DF722CFF028007AD011 /* PlusViewController.swift */,
+				E0DC7DF922CFF036007AD011 /* LikeViewController.swift */,
+				E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		E0E2147322D038880061AA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E065E45A22CCCA0500111039 /* Main.storyboard */,
+				E0E2145A22D008690061AA34 /* TabBar.storyboard */,
+				E0E2146222D00CBE0061AA34 /* HomeBar.storyboard */,
+				E0E2146522D00CD30061AA34 /* SearchBar.storyboard */,
+				E0E2146722D00CEA0061AA34 /* CameraBar.storyboard */,
+				E0E2146A22D00D080061AA34 /* LikesBar.storyboard */,
+				E0E2146C22D00D200061AA34 /* ProfileBar.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +218,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E2146422D00CBE0061AA34 /* HomeBar.storyboard in Resources */,
+				E0E2145C22D008690061AA34 /* TabBar.storyboard in Resources */,
 				E065E46122CCCA0600111039 /* LaunchScreen.storyboard in Resources */,
+				E0E2146922D00CEA0061AA34 /* CameraBar.storyboard in Resources */,
 				E065E45E22CCCA0600111039 /* Assets.xcassets in Resources */,
+				E0E2146622D00CD30061AA34 /* SearchBar.storyboard in Resources */,
 				E065E45C22CCCA0500111039 /* Main.storyboard in Resources */,
+				E0E2146E22D00D200061AA34 /* ProfileBar.storyboard in Resources */,
+				E0E2146B22D00D080061AA34 /* LikesBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +237,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E065E45922CCCA0500111039 /* ViewController.swift in Sources */,
+				E0DC7DF822CFF028007AD011 /* PlusViewController.swift in Sources */,
+				E0E2147522D038F20061AA34 /* StoryTableViewCell.swift in Sources */,
+				E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */,
+				E0E9AD2A22CE2E9C00C631C8 /* CreateUserNameViewController.swift in Sources */,
+				E0E2147722D046070061AA34 /* StoryCollectionViewCell.swift in Sources */,
+				E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */,
+				E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */,
+				E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */,
+				E0AD3BF222D0E34200A8A4CD /* PostHeaderTableViewCell.swift in Sources */,
+				E0E9AD2822CE2A2100C631C8 /* SignUpWithPhoneViewController.swift in Sources */,
+				E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */,
+				E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */,
+				E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */,
+				E0E9AD2622CE21C400C631C8 /* EnterConformationCodeViewController.swift in Sources */,
+				E0DC7DF622CFF011007AD011 /* SearchViewController.swift in Sources */,
+				E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */,
 				E065E45722CCCA0500111039 /* AppDelegate.swift in Sources */,
+				E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */,
+				E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */,
+				E0DC7DFA22CFF036007AD011 /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +277,38 @@
 				E065E46022CCCA0600111039 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E2145A22D008690061AA34 /* TabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E2145B22D008690061AA34 /* Base */,
+			);
+			name = TabBar.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E2146222D00CBE0061AA34 /* HomeBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E2146322D00CBE0061AA34 /* Base */,
+			);
+			name = HomeBar.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E2146722D00CEA0061AA34 /* CameraBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E2146822D00CEA0061AA34 /* Base */,
+			);
+			name = CameraBar.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E2146C22D00D200061AA34 /* ProfileBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E2146D22D00D200061AA34 /* Base */,
+			);
+			name = ProfileBar.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
