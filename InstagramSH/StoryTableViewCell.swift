@@ -18,6 +18,7 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
 
     }
 
