@@ -12,7 +12,9 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
  
     
     var storyUsername : [String] = ["Your Story" , "Sherif Ashraf" , "Ali" , "Omar" , "Kahraba" ,"Mohamed Ahmed" , "Abdallah" , "Hussein" , "Ahmed Ali" , "Osama"]
-    //var imageUser : [UIImage] = ["grid.png" , "gear.png" , "list.png"]
+    
+    var images : [UIImage] = [#imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "profileGraybk") , #imageLiteral(resourceName: "fbGraybk") , #imageLiteral(resourceName: "me") , #imageLiteral(resourceName: "telegram") , #imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "post") , #imageLiteral(resourceName: "backButton") ,#imageLiteral(resourceName: "Signup-img") , #imageLiteral(resourceName: "plus_photo")]
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,14 +34,13 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
         if (indexPath.row == 0) {
             cell.storyImage.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
             cell.storyButton.setTitleColor(.init(red: 162/255, green: 162/255, blue: 162/255, alpha: 1), for: .normal)
-            cell.storyImage.image = UIImage(named: "sherif")
+            cell.storyImage.image = images[0]
             cell.addStoryButton.isHidden = false
         }
         else{
             cell.addStoryButton.isHidden = true
             cell.storyButton.setTitleColor(.black, for: .normal)
-            cell.storyImage.image = UIImage(named : "me")
-
+            cell.storyImage.image = images[indexPath.row]
         }
         return cell
     }
