@@ -21,26 +21,25 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
 
     }
 
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return storyUsername.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
-         cell.storyButton.setTitle(storyUsername[indexPath.row], for: .normal) as? String
+         cell.storyButton.setTitle(storyUsername[indexPath.row], for: .normal)
         if (indexPath.row == 0) {
             cell.storyImage.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
             cell.storyButton.setTitleColor(.init(red: 162/255, green: 162/255, blue: 162/255, alpha: 1), for: .normal)
             cell.storyImage.image = UIImage(named: "sherif")
-            
-            let imageview:UIImageView = UIImageView(frame : CGRect(x: 65, y: 60, width: 20, height: 20))
-            let image:UIImage = UIImage(named: "storyplus")!
-            imageview.image = image
-            imageview.contentMode = .scaleAspectFit
-            cell.contentView.addSubview(imageview) as? UIImage
+            cell.addStoryButton.isHidden = false
         }
-        
+        else{
+            cell.addStoryButton.isHidden = true
+            cell.storyButton.setTitleColor(.black, for: .normal)
+            cell.storyImage.image = UIImage(named : "me")
+
+        }
         return cell
     }
 
