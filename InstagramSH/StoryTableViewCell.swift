@@ -13,7 +13,7 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
     
     var storyUsername : [String] = ["Your Story" , "Sherif Ashraf" , "Ali" , "Omar" , "Kahraba" ,"Mohamed Ahmed" , "Abdallah" , "Hussein" , "Ahmed Ali" , "Osama"]
     
-    var images : [UIImage] = [#imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "profileGraybk") , #imageLiteral(resourceName: "fbGraybk") , #imageLiteral(resourceName: "me") , #imageLiteral(resourceName: "telegram") , #imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "post") , #imageLiteral(resourceName: "backButton") ,#imageLiteral(resourceName: "Signup-img") , #imageLiteral(resourceName: "plus_photo")]
+    var images : [UIImage] = [#imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "love_flower") , #imageLiteral(resourceName: "doaa") , #imageLiteral(resourceName: "me") , #imageLiteral(resourceName: "telegram") , #imageLiteral(resourceName: "sherif") , #imageLiteral(resourceName: "post") , #imageLiteral(resourceName: "backButton") ,#imageLiteral(resourceName: "Signup-img") , #imageLiteral(resourceName: "plus_photo")]
     
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
