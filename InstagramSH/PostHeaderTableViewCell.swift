@@ -15,13 +15,14 @@ class PostHeaderTableViewCell: UITableViewCell {
     @IBOutlet weak var OthersButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-           userProfile.layer.cornerRadius = 18
+        userProfile.layer.cornerRadius = 18
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
+        
     }
-
+    
 }

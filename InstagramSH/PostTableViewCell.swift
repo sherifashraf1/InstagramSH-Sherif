@@ -10,11 +10,8 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
-    
     @IBOutlet weak var numberOfLikesButton: UIButton!
-    
     @IBOutlet weak var postCaptionLabel: UILabel!
-    
     @IBOutlet weak var timeAgoLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
