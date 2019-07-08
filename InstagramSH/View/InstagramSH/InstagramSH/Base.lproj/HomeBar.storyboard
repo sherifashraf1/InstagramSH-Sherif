@@ -285,7 +285,7 @@
                                                                                 <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="18"/>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </imageView>
-                                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add a comment..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lgd-UP-CUx">
+                                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgd-UP-CUx">
                                                                             <rect key="frame" x="44" y="0.0" width="250" height="36"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
@@ -362,6 +362,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="accountProfilePicture" destination="vLa-rW-Y3q" id="eSw-7R-8xg"/>
+                                            <outlet property="addCommentTextView" destination="lgd-UP-CUx" id="MqY-eP-FL9"/>
                                             <outlet property="commentButton" destination="5bQ-Pw-KcX" id="1Z0-nA-vH1"/>
                                             <outlet property="likeButton" destination="CBx-0E-MsN" id="VLx-Zh-7Rq"/>
                                             <outlet property="numberOfLikesButton" destination="27Z-Gj-PoG" id="Q6u-aX-s2e"/>

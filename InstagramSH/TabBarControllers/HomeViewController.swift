@@ -57,6 +57,8 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
                cell.selectionStyle =  .none
             
+            
+            
             return cell
         default:
             
