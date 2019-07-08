@@ -11,8 +11,9 @@ import UIKit
 class HomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
 
     var postImages : [String] = ["doaa" , "essam" , "me" , "sherif" , "amr_diab" , "hands" , "neymar" ,"cristiano"]
-
+    var postUserName = ["Sherif Ashraf","Osama Ahmed","Ahmed Mohamed","Mahmoud Fekry","Ehab Nagi","Sherif Ahmed" , "Mohamed Gamal","Omar Ahmed"]
     
+
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,9 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
         case 0 :
             return 1
 
-        case 1:
+        case 1 :
             return postImages.count
-        default:
+        default :
             return 0
         }
     }
@@ -46,21 +47,19 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
         
         switch indexPath.section {
             
-        case 0:
+        case 0 :
             let cell = tableView.dequeueReusableCell(withIdentifier: "StoryTableViewCell") as! StoryTableViewCell
             return cell
-//
-//        case 1:
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderTableViewCell") as! PostHeaderTableViewCell
-//            return cell
             
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell" ) as! PostTableViewCell
-            cell.postImageView.image = UIImage(named: postImages[indexPath.row])
-            cell.selectionStyle = .none
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell") as! NewsFeedCell
+            cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
+            cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
+               cell.selectionStyle =  .none
+            
             return cell
         default:
-        
+            
             return UITableViewCell()
         }
         

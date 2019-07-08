@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */; };
+		E01B999822D3AAFE009E644B /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B999622D3AAFE009E644B /* NewsFeedCell.swift */; };
+		E01B999922D3AAFE009E644B /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01B999722D3AAFE009E644B /* NewsFeedCell.xib */; };
 		E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DF40C22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift */; };
 		E065E45722CCCA0500111039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E45622CCCA0500111039 /* AppDelegate.swift */; };
 		E065E45C22CCCA0500111039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065E45A22CCCA0500111039 /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */; };
 		E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */; };
 		E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6222CE919100E6301D /* FacebookCell.swift */; };
-		E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */; };
 		E0C05B2822D36F53005A7781 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C05B2722D36F53005A7781 /* Post.swift */; };
 		E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3189122CD1328001681DC /* SignUpViewController.swift */; };
 		E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinedFacebookFriendsViewController.swift; sourceTree = "<group>"; };
+		E01B999622D3AAFE009E644B /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		E01B999722D3AAFE009E644B /* NewsFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
 		E05DF40C22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneOrEmailSignUPViewController.swift; sourceTree = "<group>"; };
 		E065E45322CCCA0400111039 /* InstagramSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E065E45622CCCA0500111039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		E07ABE6222CE919100E6301D /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
-		E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		E0C05B2722D36F53005A7781 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E0C3189122CD1328001681DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +110,8 @@
 				E0E2147322D038880061AA34 /* View */,
 				E065E45D22CCCA0600111039 /* Assets.xcassets */,
 				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
-				E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */,
+				E01B999622D3AAFE009E644B /* NewsFeedCell.swift */,
+				E01B999722D3AAFE009E644B /* NewsFeedCell.xib */,
 				E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */,
 				E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */,
 				E065E46222CCCA0600111039 /* Info.plist */,
@@ -224,6 +227,7 @@
 				E0E2146922D00CEA0061AA34 /* CameraBar.storyboard in Resources */,
 				E065E45E22CCCA0600111039 /* Assets.xcassets in Resources */,
 				E0E2146622D00CD30061AA34 /* SearchBar.storyboard in Resources */,
+				E01B999922D3AAFE009E644B /* NewsFeedCell.xib in Resources */,
 				E065E45C22CCCA0500111039 /* Main.storyboard in Resources */,
 				E0E2146E22D00D200061AA34 /* ProfileBar.storyboard in Resources */,
 				E0E2146B22D00D080061AA34 /* LikesBar.storyboard in Resources */,
@@ -244,10 +248,10 @@
 				E0E2147722D046070061AA34 /* StoryCollectionViewCell.swift in Sources */,
 				E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */,
 				E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */,
-				E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */,
 				E0E9AD2822CE2A2100C631C8 /* SignUpWithPhoneViewController.swift in Sources */,
 				E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */,
 				E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */,
+				E01B999822D3AAFE009E644B /* NewsFeedCell.swift in Sources */,
 				E0C05B2822D36F53005A7781 /* Post.swift in Sources */,
 				E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */,
 				E0E9AD2622CE21C400C631C8 /* EnterConformationCodeViewController.swift in Sources */,
