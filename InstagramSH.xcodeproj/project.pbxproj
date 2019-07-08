@@ -16,16 +16,14 @@
 		E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */; };
 		E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */; };
 		E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6222CE919100E6301D /* FacebookCell.swift */; };
-		E0AD3BF222D0E34200A8A4CD /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */; };
 		E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */; };
+		E0C05B2822D36F53005A7781 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C05B2722D36F53005A7781 /* Post.swift */; };
 		E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3189122CD1328001681DC /* SignUpViewController.swift */; };
 		E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */; };
 		E0DC7DF622CFF011007AD011 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF522CFF011007AD011 /* SearchViewController.swift */; };
 		E0DC7DF822CFF028007AD011 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF722CFF028007AD011 /* PlusViewController.swift */; };
 		E0DC7DFA22CFF036007AD011 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF922CFF036007AD011 /* LikeViewController.swift */; };
 		E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */; };
-		E0DFD42122D2C61000F3F99E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFD42022D2C61000F3F99E /* User.swift */; };
-		E0DFD42322D2C61F00F3F99E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFD42222D2C61F00F3F99E /* Post.swift */; };
 		E0E2145C22D008690061AA34 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2145A22D008690061AA34 /* TabBar.storyboard */; };
 		E0E2146422D00CBE0061AA34 /* HomeBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146222D00CBE0061AA34 /* HomeBar.storyboard */; };
 		E0E2146622D00CD30061AA34 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E2146522D00CD30061AA34 /* SearchBar.storyboard */; };
@@ -52,16 +50,14 @@
 		E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		E07ABE6222CE919100E6301D /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
-		E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E0C05B2722D36F53005A7781 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E0C3189122CD1328001681DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF522CFF011007AD011 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF722CFF028007AD011 /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF922CFF036007AD011 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		E0DFD42022D2C61000F3F99E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E0DFD42222D2C61F00F3F99E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E0E2145B22D008690061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		E0E2146322D00CBE0061AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InstagramSH/InstagramSH/Base.lproj/HomeBar.storyboard; sourceTree = "<group>"; };
 		E0E2146522D00CD30061AA34 /* SearchBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
@@ -112,7 +108,6 @@
 				E0E2147322D038880061AA34 /* View */,
 				E065E45D22CCCA0600111039 /* Assets.xcassets */,
 				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
-				E0AD3BF122D0E34200A8A4CD /* PostHeaderTableViewCell.swift */,
 				E0AD3BF322D0E4C100A8A4CD /* PostTableViewCell.swift */,
 				E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */,
 				E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */,
@@ -138,24 +133,15 @@
 			path = SignInAndSignUpControllers;
 			sourceTree = "<group>";
 		};
-		E0DFD42422D2C62400F3F99E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E0DFD42022D2C61000F3F99E /* User.swift */,
-				E0DFD42222D2C61F00F3F99E /* Post.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E0E2147222D0385B0061AA34 /* TabBarControllers */ = {
 			isa = PBXGroup;
 			children = (
 				E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */,
+				E0C05B2722D36F53005A7781 /* Post.swift */,
 				E0DC7DF522CFF011007AD011 /* SearchViewController.swift */,
 				E0DC7DF722CFF028007AD011 /* PlusViewController.swift */,
 				E0DC7DF922CFF036007AD011 /* LikeViewController.swift */,
 				E0DC7DFB22CFF049007AD011 /* ProfileViewController.swift */,
-				E0DFD42422D2C62400F3F99E /* Model */,
 			);
 			path = TabBarControllers;
 			sourceTree = "<group>";
@@ -252,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DC7DF822CFF028007AD011 /* PlusViewController.swift in Sources */,
-				E0DFD42322D2C61F00F3F99E /* Post.swift in Sources */,
 				E0E2147522D038F20061AA34 /* StoryTableViewCell.swift in Sources */,
 				E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */,
 				E0E9AD2A22CE2E9C00C631C8 /* CreateUserNameViewController.swift in Sources */,
@@ -260,10 +245,10 @@
 				E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */,
 				E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */,
 				E0AD3BF422D0E4C200A8A4CD /* PostTableViewCell.swift in Sources */,
-				E0AD3BF222D0E34200A8A4CD /* PostHeaderTableViewCell.swift in Sources */,
 				E0E9AD2822CE2A2100C631C8 /* SignUpWithPhoneViewController.swift in Sources */,
 				E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */,
 				E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */,
+				E0C05B2822D36F53005A7781 /* Post.swift in Sources */,
 				E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */,
 				E0E9AD2622CE21C400C631C8 /* EnterConformationCodeViewController.swift in Sources */,
 				E0DC7DF622CFF011007AD011 /* SearchViewController.swift in Sources */,
@@ -272,7 +257,6 @@
 				E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */,
 				E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */,
 				E0DC7DFA22CFF036007AD011 /* LikeViewController.swift in Sources */,
-				E0DFD42122D2C61000F3F99E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

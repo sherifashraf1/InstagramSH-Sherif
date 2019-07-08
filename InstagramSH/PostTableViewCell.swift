@@ -9,13 +9,19 @@
 import UIKit
 
 class PostTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var userProfilePic: UIImageView!
+    @IBOutlet weak var userNameButton: UIButton!
+    @IBOutlet weak var threeDotsButton: UIButton!
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var numberOfLikesButton: UIButton!
     @IBOutlet weak var postCaptionLabel: UILabel!
     @IBOutlet weak var timeAgoLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        postImageView.contentMode = .scaleToFill
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
