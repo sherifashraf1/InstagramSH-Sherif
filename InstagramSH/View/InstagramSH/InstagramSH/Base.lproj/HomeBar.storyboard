@@ -129,7 +129,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="36"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amr_diab" translatesAutoresizingMaskIntoConstraints="NO" id="kNF-GT-eH3">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="36.000000000000057" height="36"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="36" id="92h-h9-Y41"/>
                                                                                 <constraint firstAttribute="width" constant="36" id="mPb-wO-vfS"/>
@@ -157,14 +157,14 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </view>
-                                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-SW-mLB" userLabel="ThreeDotsButton">
+                                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-SW-mLB" userLabel="ThreeDotsButton">
                                                                             <rect key="frame" x="216" y="0.0" width="30" height="36"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="30" id="4H4-Lj-LZQ"/>
                                                                                 <constraint firstAttribute="height" constant="36" id="O8b-R6-gRj"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="5"/>
-                                                                            <state key="normal" image="three_dots">
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                                                            <state key="normal" title="···">
                                                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             </state>
                                                                         </button>
@@ -444,7 +444,6 @@
         <image name="ribbon" width="18.5" height="26"/>
         <image name="sherif" width="349.66665649414062" height="349.66665649414062"/>
         <image name="telegram" width="25" height="25"/>
-        <image name="three_dots" width="42.666667938232422" height="42.666667938232422"/>
         <image name="tvshot" width="25" height="25"/>
     </resources>
 </document>
