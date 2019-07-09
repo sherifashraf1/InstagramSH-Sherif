@@ -30,7 +30,8 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
         changeInstagramTitleAndSizeOnNavBar()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "NewsFeedCell", bundle: nil), forCellReuseIdentifier: "NewsFeedCell")
+        //tableView.register(UINib(nibName: "NewsFeedCell", bundle: nil), forCellReuseIdentifier: "NewsFeedCell")
+        tableView.registerNib(cell: NewsFeedCell.self)
         
     }
     
@@ -59,7 +60,8 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
             return cell
             
         case .newsFeed :
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell") as! NewsFeedCell
+           // let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell") as! NewsFeedCell
+            let cell = tableView.dequeue() as NewsFeedCell
             cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
             cell.selectionStyle =  .none

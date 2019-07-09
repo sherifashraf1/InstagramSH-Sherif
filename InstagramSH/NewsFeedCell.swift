@@ -9,23 +9,6 @@
 import UIKit
 
 class NewsFeedCell: UITableViewCell , UITextViewDelegate {
-
-//    @IBOutlet weak var userProfilePicture: UIImageView!
-//    @IBOutlet weak var userNamePostButton: UIButton!
-//    @IBOutlet weak var threeDotsButton: UIButton!
-//    @IBOutlet weak var userPostImage: UIImageView!
-//    @IBOutlet weak var likeButton: UIButton!
-//    @IBOutlet weak var commentButton: UIButton!
-//    @IBOutlet weak var shareButton: UIButton!
-//    @IBOutlet weak var saveButton: UIButton!
-//    @IBOutlet weak var numberOfLikesButton: UIButton!
-//    @IBOutlet weak var accountProfilePicture: UIImageView!
-//    @IBOutlet weak var addCommentTextView: UITextView!
-//    @IBOutlet weak var smileEmojiCommentButton: UIButton!
-//    @IBOutlet weak var heartEmojiCommentButton: UIButton!
-//    @IBOutlet weak var plusCommentButton: UIButton!
-//    @IBOutlet weak var timeAgoLabel: UILabel!
-//
     
     @IBOutlet weak var userProfilePicture: UIImageView!
     @IBOutlet weak var userNamePostButton: UIButton!

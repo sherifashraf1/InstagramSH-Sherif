@@ -15,6 +15,7 @@
 		E065E45C22CCCA0500111039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065E45A22CCCA0500111039 /* Main.storyboard */; };
 		E065E45E22CCCA0600111039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E065E45D22CCCA0600111039 /* Assets.xcassets */; };
 		E065E46122CCCA0600111039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */; };
+		E06C6DCD22D44AD60008D642 /* GenericsTableViewNibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C6DCC22D44AD60008D642 /* GenericsTableViewNibs.swift */; };
 		E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */; };
 		E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */; };
 		E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6222CE919100E6301D /* FacebookCell.swift */; };
@@ -50,6 +51,7 @@
 		E065E45D22CCCA0600111039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E065E46022CCCA0600111039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E065E46222CCCA0600111039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06C6DCC22D44AD60008D642 /* GenericsTableViewNibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsTableViewNibs.swift; sourceTree = "<group>"; };
 		E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		E07ABE6222CE919100E6301D /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E065E45D22CCCA0600111039 /* Assets.xcassets */,
 				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
 				E01B999622D3AAFE009E644B /* NewsFeedCell.swift */,
+				E06C6DCC22D44AD60008D642 /* GenericsTableViewNibs.swift */,
 				E01B999722D3AAFE009E644B /* NewsFeedCell.xib */,
 				E0E2147622D046070061AA34 /* StoryCollectionViewCell.swift */,
 				E065E45F22CCCA0600111039 /* LaunchScreen.storyboard */,
@@ -246,6 +249,7 @@
 				E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */,
 				E0E9AD2A22CE2E9C00C631C8 /* CreateUserNameViewController.swift in Sources */,
 				E0E2147722D046070061AA34 /* StoryCollectionViewCell.swift in Sources */,
+				E06C6DCD22D44AD60008D642 /* GenericsTableViewNibs.swift in Sources */,
 				E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */,
 				E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */,
 				E0E9AD2822CE2A2100C631C8 /* SignUpWithPhoneViewController.swift in Sources */,
