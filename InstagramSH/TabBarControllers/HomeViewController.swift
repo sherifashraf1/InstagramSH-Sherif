@@ -14,7 +14,7 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
     var postUserName = ["Sherif Ashraf","Osama Ahmed","Ahmed Mohamed","Mahmoud Fekry","Ehab Nagi","Sherif Ahmed" , "Mohamed Gamal","Omar Ahmed"]
     
     
-    enum myTableSection : CaseIterable{ //CaseIterable is a protocol to use the enumu like as array the each case is an indexpath
+    enum myTableSection : CaseIterable{ //CaseIterable is a protocol to use the enum like as array the each case is an indexpath
         case stories                    // indexpath 0
         case newsFeed                   // indexpath 1
         
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let section = myTableSection.allCases[section] // عايز اعرف هو واقف دلوقتى عند الاسكشن رقم كام
+        let section = myTableSection.allCases[section] // عايز اعرف هو واقف دلوقتى عند السكشن رقم كام
         switch section {
         case .stories :
             return 1

@@ -21,7 +21,6 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsHorizontalScrollIndicator = false
-
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -32,13 +31,17 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
          cell.storyButton.setTitle(storyUsername[indexPath.row], for: .normal)
         if (indexPath.row == 0) {
-            cell.storyImage.layer.borderColor = UIColor.gray.withAlphaComponent(0.7).cgColor
+            cell.storyImage.layer.borderWidth = 2
+            cell.storyImage.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
             cell.storyImage.image = images[0]
             cell.addStoryButton.isHidden = false
         }
         else{
+            cell.storyImage.layer.borderWidth = 3
+            cell.storyImage.layer.borderColor = UIColor.purple.cgColor
             cell.addStoryButton.isHidden = true
             cell.storyImage.image = images[indexPath.row]
+
         }
         return cell
     }

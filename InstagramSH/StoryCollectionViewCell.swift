@@ -16,8 +16,8 @@ class StoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         storyImage.layer.cornerRadius = storyImage.frame.width / 2
-        storyImage.layer.borderColor = UIColor.purple.withAlphaComponent(0.5).cgColor
-        storyImage.layer.borderWidth = 3
+        //storyImage.layer.borderColor = UIColor.purple.withAlphaComponent(0.5).cgColor
+        
         //storyButton.setTitleColor(.black, for: .normal)
         
     }
