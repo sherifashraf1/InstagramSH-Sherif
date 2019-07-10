@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class StoryCollectionViewCell: UICollectionViewCell {
     
@@ -16,10 +17,7 @@ class StoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         storyImage.layer.cornerRadius = storyImage.frame.width / 2
-        //storyImage.layer.borderColor = UIColor.purple.withAlphaComponent(0.5).cgColor
-        
-        //storyButton.setTitleColor(.black, for: .normal)
-        
+
     }
     
     override func prepareForReuse() {

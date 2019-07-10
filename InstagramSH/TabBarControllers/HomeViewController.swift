@@ -71,4 +71,64 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
         
     }
     
-}
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        postImages.remove(at: indexPath.row)
+        postUserName.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // let cell = tableView.cellForRow(at: indexPath) as! NewsFeedCell
+            let imageView = UIImageView(image: UIImage(named: postUserName[indexPath.row]))
+            imageView.frame = self.view.frame
+            imageView.backgroundColor = .init(hue: 165/255, saturation: 165/255, brightness: 165/255, alpha: 0.1)
+            imageView.contentMode = .top
+            imageView.isUserInteractionEnabled = true
+             self.navigationController?.navigationBar.isHidden = true
+             self.tabBarController?.tabBar.isHidden = true
+          // cell.userProfilePicture.isHidden = true
+          // cell.userNamePostButton.isHidden = true
+        
+             self.view.addSubview(imageView)
+
+            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+            imageView.addGestureRecognizer(tap)
+            
+            self.view.addSubview(imageView)
+        }
+        
+        // Use to back from full mode
+        @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+            sender.view?.removeFromSuperview()
+            self.navigationController?.navigationBar.isHidden = false
+            self.tabBarController?.tabBar.isHidden = false
+
+        }
+
+        
+    }
+    
+    
+//
+//        @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+//            let imageView = sender.view as! UIImageView
+//            let newImageView = UIImageView(image: imageView.image)
+//            newImageView.frame = UIScreen.main.bounds
+//            newImageView.backgroundColor = .black
+//            newImageView.contentMode = .scaleAspectFit
+//            newImageView.isUserInteractionEnabled = true
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+//            newImageView.addGestureRecognizer(tap)
+//            self.view.addSubview(newImageView)
+//            self.navigationController?.isNavigationBarHidden = true
+//            self.tabBarController?.tabBar.isHidden = true
+//        }
+//
+//        @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+//            self.navigationController?.isNavigationBarHidden = false
+//            self.tabBarController?.tabBar.isHidden = false
+//            sender.view?.removeFromSuperview()
+//        }
+//
+
