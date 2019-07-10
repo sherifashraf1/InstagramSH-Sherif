@@ -13,6 +13,8 @@ class SignUpWithPhoneViewController: UIViewController {
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    var configureButton: ConfigureButtonsWithTextFields!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

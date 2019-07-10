@@ -17,6 +17,9 @@ class PhoneOrEmailSignUPViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var descriptionSMSLabel: UILabel!
+    
+    var configureButton: ConfigureButtonsWithTextFields!
+
     lazy var phoneViewShadow = UIView(frame: CGRect(x: buttomLineView.frame.minX, y: 0, width: buttomLineView.frame.width/2 , height: buttomLineView.frame.height))
     // let phoneViewShadow = UIView(frame: CGRect(x: 0, y: 0, width: 207, height: 1))
     lazy var emailViewShadow = UIView(frame: CGRect(x: buttomLineView.frame.midX, y: 0, width: buttomLineView.frame.width/2 , height: buttomLineView.frame.height))

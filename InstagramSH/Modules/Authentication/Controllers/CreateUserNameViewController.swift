@@ -12,6 +12,9 @@ class CreateUserNameViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    var configureButton: ConfigureButtonsWithTextFields!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

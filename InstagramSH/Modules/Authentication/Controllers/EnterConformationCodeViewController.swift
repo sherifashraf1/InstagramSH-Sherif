@@ -12,7 +12,8 @@ class EnterConformationCodeViewController: UIViewController {
 
     @IBOutlet weak var confirmationCodeTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
-    
+    var configureButton: ConfigureButtonsWithTextFields!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButton = ConfigureButtonsWithTextFields(textFields: [confirmationCodeTextField], button: nextButton)

@@ -1265,6 +1265,14 @@
             </objects>
             <point key="canvasLocation" x="2222" y="-733"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="XHQ-yu-05r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="S51-Wu-uzP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1K-pA-VlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="-898"/>
+        </scene>
         <!--TabBarID-->
         <scene sceneID="1ar-Iz-OUX">
             <objects>
