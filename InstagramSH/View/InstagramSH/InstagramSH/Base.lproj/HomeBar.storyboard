@@ -22,68 +22,68 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="936"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" rowHeight="138" id="KoH-tc-g2W" customClass="StoryTableViewCell" customModule="InstagramSH" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" rowHeight="147" id="KoH-tc-g2W" customClass="StoryTableViewCell" customModule="InstagramSH" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KoH-tc-g2W" id="BTz-Tz-mg0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KoH-tc-g2W" id="BTz-Tz-mg0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JM0-GH-gU5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                                    <rect key="frame" x="0.0" y="5" width="414" height="115"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="138" id="4jp-5V-nbm"/>
+                                                        <constraint firstAttribute="height" constant="115" id="GwI-mG-dVY"/>
                                                     </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zoi-ct-G6N">
-                                                        <size key="itemSize" width="85" height="101.00000000000001"/>
+                                                        <size key="itemSize" width="90" height="111"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="3g7-Q1-S8m" customClass="StoryCollectionViewCell" customModule="InstagramSH" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="18.333333333333332" width="85" height="101.00000000000001"/>
+                                                            <rect key="frame" x="0.0" y="2" width="90" height="111"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="101.00000000000001"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="111"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sherif" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-8a-f8n">
-                                                                        <rect key="frame" x="5" y="0.0" width="80" height="80"/>
+                                                                        <rect key="frame" x="5" y="11" width="80" height="80"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" secondItem="7dF-8a-f8n" secondAttribute="height" multiplier="1:1" id="XCN-2N-7fX"/>
-                                                                            <constraint firstAttribute="width" constant="80" id="cdU-JU-F5R"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="58f-2A-Fk8"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="c74-KB-rJQ"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-6b-PmQ">
-                                                                        <rect key="frame" x="2" y="85" width="81" height="10"/>
+                                                                        <rect key="frame" x="5" y="96" width="80" height="10"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="10" id="2E7-FU-GCr"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="Pic-aL-Zw3"/>
+                                                                            <constraint firstAttribute="height" constant="10" id="hu1-sZ-7M0"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                         <state key="normal" title="Your Story">
-                                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                            <color key="titleColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-rn-OZq" userLabel="AddStoryButton">
-                                                                        <rect key="frame" x="65" y="60" width="20" height="20"/>
+                                                                        <rect key="frame" x="63" y="71" width="20" height="20"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="20" id="Mek-59-ZdG"/>
-                                                                            <constraint firstAttribute="width" constant="20" id="bcM-xS-bsa"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="tWW-5E-aj9"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="tXz-f7-rHg"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button" image="AddStory"/>
                                                                     </button>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="7dF-8a-f8n" secondAttribute="trailing" id="0Kx-C1-6f7"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Gtj-rn-OZq" secondAttribute="trailing" id="8kf-N4-mCO"/>
-                                                                <constraint firstItem="7dF-8a-f8n" firstAttribute="top" secondItem="3g7-Q1-S8m" secondAttribute="top" id="Vug-y8-qPh"/>
-                                                                <constraint firstAttribute="trailing" secondItem="pEK-6b-PmQ" secondAttribute="trailing" constant="2" id="Y5U-tr-90C"/>
-                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="centerX" secondItem="3g7-Q1-S8m" secondAttribute="centerX" id="aX2-ik-yu8"/>
-                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="Gtj-rn-OZq" secondAttribute="bottom" constant="5" id="hvx-yp-cLd"/>
-                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="7dF-8a-f8n" secondAttribute="bottom" constant="5" id="uSI-iB-2Gs"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Gtj-rn-OZq" secondAttribute="trailing" constant="7" id="0mC-gv-Shy"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="7dF-8a-f8n" secondAttribute="bottom" constant="5" id="2Xh-le-nl4"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="Gtj-rn-OZq" secondAttribute="bottom" constant="5" id="66D-7M-kl5"/>
+                                                                <constraint firstAttribute="bottom" secondItem="pEK-6b-PmQ" secondAttribute="bottom" constant="5" id="dBP-5W-Fjg"/>
+                                                                <constraint firstItem="7dF-8a-f8n" firstAttribute="centerX" secondItem="3g7-Q1-S8m" secondAttribute="centerX" id="oq4-6q-37R"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="centerX" secondItem="3g7-Q1-S8m" secondAttribute="centerX" id="rDa-cI-pEA"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="addStoryButton" destination="Gtj-rn-OZq" id="dj9-0o-rZI"/>
@@ -95,10 +95,10 @@
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="JM0-GH-gU5" secondAttribute="trailing" id="8wW-oh-8iF"/>
-                                                <constraint firstAttribute="bottom" secondItem="JM0-GH-gU5" secondAttribute="bottom" id="OX8-X7-BLt"/>
-                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="top" secondItem="BTz-Tz-mg0" secondAttribute="top" id="kgu-ix-fXz"/>
-                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="leading" secondItem="BTz-Tz-mg0" secondAttribute="leading" id="qnI-kD-afW"/>
+                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="top" secondItem="BTz-Tz-mg0" secondAttribute="top" constant="5" id="Su5-DC-CbF"/>
+                                                <constraint firstAttribute="trailing" secondItem="JM0-GH-gU5" secondAttribute="trailing" id="fry-3k-c61"/>
+                                                <constraint firstAttribute="bottom" secondItem="JM0-GH-gU5" secondAttribute="bottom" constant="5" id="gA8-hZ-e3l"/>
+                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="leading" secondItem="BTz-Tz-mg0" secondAttribute="leading" id="ssa-C3-61H"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

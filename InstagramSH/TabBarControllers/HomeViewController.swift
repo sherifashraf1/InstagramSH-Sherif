@@ -65,6 +65,7 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
             cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
             cell.selectionStyle =  .none
+            
             return cell
         }
         

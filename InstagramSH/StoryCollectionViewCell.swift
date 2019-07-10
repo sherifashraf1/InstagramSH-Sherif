@@ -15,17 +15,19 @@ class StoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var addStoryButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        storyImage.layer.cornerRadius = 40
+        storyImage.layer.cornerRadius = storyImage.frame.width / 2
         storyImage.layer.borderColor = UIColor.purple.withAlphaComponent(0.5).cgColor
-        storyImage.layer.borderWidth = 2
-        storyButton.setTitleColor(.black, for: .normal)
+        storyImage.layer.borderWidth = 3
+        //storyButton.setTitleColor(.black, for: .normal)
         
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        storyButton.setTitleColor(.black, for: .normal)
-
+        //storyImage.image = nil
+        //storyButton.isHidden = true
     }
+
+    
     
 }

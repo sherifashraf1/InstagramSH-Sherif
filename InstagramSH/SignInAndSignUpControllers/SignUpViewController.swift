@@ -25,7 +25,7 @@ class SignUpViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
 
         default:
-            print("error")
+            fatalError("Error.....")
         }
         
     }

@@ -30,6 +30,10 @@ class NewsFeedCell: UITableViewCell , UITextViewDelegate {
         super.awakeFromNib()
         userProfilePicture.layer.cornerRadius = userProfilePicture.frame.width / 2
         addCommentConfigTextView()
+        
+        
+        
+        
     }
 
     func addCommentConfigTextView(){
