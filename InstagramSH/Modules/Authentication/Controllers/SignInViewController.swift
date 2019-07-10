@@ -12,7 +12,7 @@ import UIKit
 
 
 
-class SignInViewController: UIViewController , UITextFieldDelegate{
+class SignInViewController: UIViewController{
     
     
     @IBOutlet weak var userNameTextField: UITextField!
@@ -21,8 +21,6 @@ class SignInViewController: UIViewController , UITextFieldDelegate{
     
     var configureButton: ConfigureButtonsWithTextFields!
 
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +55,7 @@ class SignInViewController: UIViewController , UITextFieldDelegate{
     
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        super.viewDidDisappear(animated)
         
         NotificationCenter.default.removeObserver(self)
     }
@@ -73,18 +71,10 @@ class SignInViewController: UIViewController , UITextFieldDelegate{
         passwordTextField.resignFirstResponder()
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField === userNameTextField {
-            passwordTextField.becomeFirstResponder()
-        }else{
-            hideKeyboard()
-        }
-        return true
-    }
+   
     
     @IBAction func loginButton(_ sender: Any) {
         view.endEditing(true)
-        
     }
     
     
@@ -102,3 +92,14 @@ class SignInViewController: UIViewController , UITextFieldDelegate{
         
 
 
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField === userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        }else{
+            hideKeyboard()
+        }
+        return true
+    }
+
+}

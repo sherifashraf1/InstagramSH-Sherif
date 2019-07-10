@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39688ADA22D67FD8009F5A12 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39688AD822D67FD8009F5A12 /* NewsTableViewCell.swift */; };
+		39688ADB22D67FD8009F5A12 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39688AD922D67FD8009F5A12 /* NewsTableViewCell.xib */; };
 		E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */; };
 		E01B999822D3AAFE009E644B /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B999622D3AAFE009E644B /* NewsFeedCell.swift */; };
 		E01B999922D3AAFE009E644B /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01B999722D3AAFE009E644B /* NewsFeedCell.xib */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39688AD822D67FD8009F5A12 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		39688AD922D67FD8009F5A12 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		E016420322CE35540070102E /* FinedFacebookFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinedFacebookFriendsViewController.swift; sourceTree = "<group>"; };
 		E01B999622D3AAFE009E644B /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		E01B999722D3AAFE009E644B /* NewsFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				E01B999722D3AAFE009E644B /* NewsFeedCell.xib */,
 				E01B999622D3AAFE009E644B /* NewsFeedCell.swift */,
 				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
+				39688AD822D67FD8009F5A12 /* NewsTableViewCell.swift */,
+				39688AD922D67FD8009F5A12 /* NewsTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 				E065E45E22CCCA0600111039 /* Assets.xcassets in Resources */,
 				E0E2146622D00CD30061AA34 /* SearchBar.storyboard in Resources */,
 				E01B999922D3AAFE009E644B /* NewsFeedCell.xib in Resources */,
+				39688ADB22D67FD8009F5A12 /* NewsTableViewCell.xib in Resources */,
 				E065E45C22CCCA0500111039 /* Authentication.storyboard in Resources */,
 				E0E2146E22D00D200061AA34 /* ProfileBar.storyboard in Resources */,
 				E0E2146B22D00D080061AA34 /* LikesBar.storyboard in Resources */,
@@ -344,6 +351,7 @@
 				E0DC7DFC22CFF049007AD011 /* ProfileViewController.swift in Sources */,
 				E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */,
 				E01B999822D3AAFE009E644B /* NewsFeedCell.swift in Sources */,
+				39688ADA22D67FD8009F5A12 /* NewsTableViewCell.swift in Sources */,
 				E0C05B2822D36F53005A7781 /* Post.swift in Sources */,
 				E05DF40D22CD502600CA6529 /* PhoneOrEmailSignUPViewController.swift in Sources */,
 				E0E9AD2622CE21C400C631C8 /* EnterConformationCodeViewController.swift in Sources */,

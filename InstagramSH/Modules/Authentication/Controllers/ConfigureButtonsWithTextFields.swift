@@ -11,8 +11,8 @@ import UIKit
 
 class ConfigureButtonsWithTextFields {
     
-    var textFields: [UITextField]!
-    var button: UIButton!
+    private let textFields: [UITextField]
+    private let button: UIButton
     
     init(textFields: [UITextField], button: UIButton) {
         

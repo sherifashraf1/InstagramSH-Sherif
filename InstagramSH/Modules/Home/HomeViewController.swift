@@ -8,51 +8,56 @@
 
 import UIKit
 
-class HomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
+class HomeViewController: UIViewController {
     
     var postImages : [String] = ["doaa" , "essam" , "me" , "sherif" , "amr_diab" , "hands" , "neymar" ,"cristiano"]
+    
     var postUserName = ["Sherif Ashraf","Osama Ahmed","Ahmed Mohamed","Mahmoud Fekry","Ehab Nagi","Sherif Ahmed" , "Mohamed Gamal","Omar Ahmed"]
     
     
-    enum myTableSection : CaseIterable{ //CaseIterable is a protocol to use the enum like as array the each case is an indexpath
+    
+    enum HomeTableSection : CaseIterable{ //CaseIterable is a protocol to use the enum like as array the each case is an indexpath
         case stories                    // indexpath 0
         case newsFeed                   // indexpath 1
-        
+        case newsFeedSimple
     }
     
-    func changeInstagramTitleAndSizeOnNavBar(){
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Noteworthy-Bold", size: 25) ?? "verdana"]
-    }
     
     @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeInstagramTitleAndSizeOnNavBar()
+        
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.register(UINib(nibName: "NewsFeedCell", bundle: nil), forCellReuseIdentifier: "NewsFeedCell")
-        tableView.registerNib(cell: NewsFeedCell.self)
         
+        tableView.registerNib(cell: NewsFeedCell.self)
+        tableView.registerNib(cell: NewsTableViewCell.self)
     }
     
+}
+
+extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return myTableSection.allCases.count
+        return HomeTableSection.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let section = myTableSection.allCases[section] // عايز اعرف هو واقف دلوقتى عند السكشن رقم كام
+        // عايز اعرف هو واقف دلوقتى عند السكشن رقم كام
+        let section = HomeTableSection.allCases[section]
         switch section {
         case .stories :
             return 1
-            
-        case .newsFeed :
+        case .newsFeed, .newsFeedSimple :
             return postImages.count
         }
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let section = myTableSection.allCases[indexPath.section] // عايز اعرف هو واقف دلوقتى عند السكشن رقم كام
+        let section = HomeTableSection.allCases[indexPath.section] // عايز اعرف هو واقف دلوقتى عند السكشن رقم كام
         
         switch section {
         case .stories :
@@ -60,12 +65,18 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
             return cell
             
         case .newsFeed :
-           // let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell") as! NewsFeedCell
+            // let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell") as! NewsFeedCell
             let cell = tableView.dequeue() as NewsFeedCell
             cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
-            cell.selectionStyle =  .none
+            cell.selectionStyle = .none
+            return cell
             
+        case .newsFeedSimple:
+            let cell = tableView.dequeue() as NewsTableViewCell
+            cell.thumbImageView.image = UIImage(named: postImages[indexPath.row])
+            cell.descriptionLabel.text = postUserName[indexPath.row]
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -79,56 +90,6 @@ class HomeViewController: UIViewController , UITableViewDataSource , UITableView
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // let cell = tableView.cellForRow(at: indexPath) as! NewsFeedCell
-            let imageView = UIImageView(image: UIImage(named: postUserName[indexPath.row]))
-            imageView.frame = self.view.frame
-            imageView.backgroundColor = .init(hue: 165/255, saturation: 165/255, brightness: 165/255, alpha: 0.1)
-            imageView.contentMode = .top
-            imageView.isUserInteractionEnabled = true
-             self.navigationController?.navigationBar.isHidden = true
-             self.tabBarController?.tabBar.isHidden = true
-          // cell.userProfilePicture.isHidden = true
-          // cell.userNamePostButton.isHidden = true
-        
-             self.view.addSubview(imageView)
-
-            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-            imageView.addGestureRecognizer(tap)
-            
-            self.view.addSubview(imageView)
-        }
-        
-        // Use to back from full mode
-        @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-            sender.view?.removeFromSuperview()
-            self.navigationController?.navigationBar.isHidden = false
-            self.tabBarController?.tabBar.isHidden = false
-
-        }
-
-        
+      
     }
-    
-    
-//
-//        @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
-//            let imageView = sender.view as! UIImageView
-//            let newImageView = UIImageView(image: imageView.image)
-//            newImageView.frame = UIScreen.main.bounds
-//            newImageView.backgroundColor = .black
-//            newImageView.contentMode = .scaleAspectFit
-//            newImageView.isUserInteractionEnabled = true
-//            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-//            newImageView.addGestureRecognizer(tap)
-//            self.view.addSubview(newImageView)
-//            self.navigationController?.isNavigationBarHidden = true
-//            self.tabBarController?.tabBar.isHidden = true
-//        }
-//
-//        @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-//            self.navigationController?.isNavigationBarHidden = false
-//            self.tabBarController?.tabBar.isHidden = false
-//            sender.view?.removeFromSuperview()
-//        }
-//
-
+}

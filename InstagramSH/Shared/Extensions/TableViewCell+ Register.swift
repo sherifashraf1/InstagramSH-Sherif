@@ -12,7 +12,6 @@ extension UITableView {
         let nibName = String(describing: Cell.self)
         self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
     }
-    
 }
 
 extension UITableView{
