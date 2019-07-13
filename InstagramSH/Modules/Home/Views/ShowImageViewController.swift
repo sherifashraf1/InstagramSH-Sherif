@@ -33,5 +33,8 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
         view.addSubview(scrollView)
         
     }
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
     
 }
