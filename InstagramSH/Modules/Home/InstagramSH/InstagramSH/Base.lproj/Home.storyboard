@@ -142,7 +142,7 @@
         <!--Show Image View Controller-->
         <scene sceneID="V5M-DB-lLm">
             <objects>
-                <viewController id="6Li-hm-BpF" customClass="ShowImageViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowImageViewController" id="6Li-hm-BpF" customClass="ShowImageViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPo-mK-L5u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

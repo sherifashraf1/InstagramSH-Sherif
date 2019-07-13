@@ -69,6 +69,13 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
             let cell = tableView.dequeue() as NewsFeedCell
             cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
+            
+            cell.userPostImage.isUserInteractionEnabled = true
+            cell.userPostImage.isMultipleTouchEnabled = true
+            let tapgesture = UITapGestureRecognizer(target: self, action: #selector(tapImage))
+            tapgesture.numberOfTapsRequired = 1
+            cell.userPostImage.addGestureRecognizer(tapgesture)
+            
             return cell
             
         case .newsFeedSimple:
@@ -79,6 +86,18 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
         }
         
     }
+    
+    
+    
+    @objc func tapImage(_ gesture : UIGestureRecognizer){
+        let tappedImage = gesture.location(in: tableView)
+        if let indexPath = tableView.indexPathForRow(at: tappedImage){
+            print("the (indexPath.row) is: \(indexPath.row)")
+            print("the Tapped Image is: \(postImages[indexPath.row])")
+        }
+    }
+    
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         postImages.remove(at: indexPath.row)
