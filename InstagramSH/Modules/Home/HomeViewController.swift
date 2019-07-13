@@ -69,14 +69,12 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
             let cell = tableView.dequeue() as NewsFeedCell
             cell.userPostImage.image = UIImage(named: postImages[indexPath.row])
             cell.userNamePostButton.setTitle(postUserName[indexPath.row], for: .normal)
-            cell.selectionStyle = .none
             return cell
             
         case .newsFeedSimple:
             let cell = tableView.dequeue() as NewsTableViewCell
             cell.thumbImageView.image = UIImage(named: postImages[indexPath.row])
             cell.descriptionLabel.text = postUserName[indexPath.row]
-            cell.selectionStyle = .none
             return cell
         }
         

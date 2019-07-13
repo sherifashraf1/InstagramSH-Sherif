@@ -139,16 +139,30 @@
             </objects>
             <point key="canvasLocation" x="-1065.217391304348" y="562.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Image View Controller-->
         <scene sceneID="V5M-DB-lLm">
             <objects>
-                <viewController id="6Li-hm-BpF" sceneMemberID="viewController">
+                <viewController id="6Li-hm-BpF" customClass="ShowImageViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPo-mK-L5u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-GI-fmS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gSo-GI-fmS" firstAttribute="top" secondItem="sSI-al-TMB" secondAttribute="top" id="AVd-fd-Ag9"/>
+                            <constraint firstItem="gSo-GI-fmS" firstAttribute="leading" secondItem="sSI-al-TMB" secondAttribute="leading" id="U9K-N1-x24"/>
+                            <constraint firstItem="sSI-al-TMB" firstAttribute="trailing" secondItem="gSo-GI-fmS" secondAttribute="trailing" id="jPe-C3-26b"/>
+                            <constraint firstItem="sSI-al-TMB" firstAttribute="bottom" secondItem="gSo-GI-fmS" secondAttribute="bottom" id="n5p-Zd-ohp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sSI-al-TMB"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="gSo-GI-fmS" id="rIm-CZ-YNs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l27-85-cyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

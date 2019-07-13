@@ -21,6 +21,7 @@
 		E06E1B5D22CCE4EB004F76F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */; };
 		E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */; };
 		E07ABE6322CE919100E6301D /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07ABE6222CE919100E6301D /* FacebookCell.swift */; };
+		E0BEC1C022DA6ECB009171EF /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BEC1BF22DA6ECB009171EF /* ShowImageViewController.swift */; };
 		E0C05B2822D36F53005A7781 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C05B2722D36F53005A7781 /* Post.swift */; };
 		E0C3189222CD1328001681DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3189122CD1328001681DC /* SignUpViewController.swift */; };
 		E0DC7DF422CFEFC3007AD011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */; };
@@ -59,6 +60,7 @@
 		E06E1B5C22CCE4EB004F76F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E07ABE6022CE852400E6301D /* DiscoverPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewController.swift; sourceTree = "<group>"; };
 		E07ABE6222CE919100E6301D /* FacebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
+		E0BEC1BF22DA6ECB009171EF /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		E0C05B2722D36F53005A7781 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E0C3189122CD1328001681DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0DC7DF322CFEFC3007AD011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				E01B999722D3AAFE009E644B /* NewsFeedCell.xib */,
 				E01B999622D3AAFE009E644B /* NewsFeedCell.swift */,
 				E0E2147422D038F20061AA34 /* StoryTableViewCell.swift */,
+				E0BEC1BF22DA6ECB009171EF /* ShowImageViewController.swift */,
 				39688AD822D67FD8009F5A12 /* NewsTableViewCell.swift */,
 				39688AD922D67FD8009F5A12 /* NewsTableViewCell.xib */,
 			);
@@ -344,6 +347,7 @@
 				E07ABE6122CE852400E6301D /* DiscoverPeopleViewController.swift in Sources */,
 				E0E9AD2A22CE2E9C00C631C8 /* CreateUserNameViewController.swift in Sources */,
 				E0E2147722D046070061AA34 /* StoryCollectionViewCell.swift in Sources */,
+				E0BEC1C022DA6ECB009171EF /* ShowImageViewController.swift in Sources */,
 				E06C6DCD22D44AD60008D642 /* TableViewCell+ Register.swift in Sources */,
 				E0E9AD2422CE0A3E00C631C8 /* ConfigureButtonsWithTextFields.swift in Sources */,
 				E016420422CE35540070102E /* FinedFacebookFriendsViewController.swift in Sources */,
