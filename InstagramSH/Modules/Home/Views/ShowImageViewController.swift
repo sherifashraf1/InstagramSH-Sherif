@@ -15,8 +15,23 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
     var imageView : UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        scrollView.delegate = self
+        configScrollViewImage()
 
 }
+    
+    
+    func configScrollViewImage(){
+        imageView = UIImageView(image: selectedImage)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 3.0
+        scrollView.zoomScale = 1.0
+        scrollView.delegate = self
+        scrollView.backgroundColor = .black
+        scrollView.addSubview(imageView)
+        view.addSubview(scrollView)
+        
+    }
+    
 }
