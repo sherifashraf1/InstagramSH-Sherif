@@ -13,10 +13,13 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     var selectedImage =  UIImage()
     var imageView : UIImageView!
+    
+    var gestureRecognizer: UITapGestureRecognizer!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configScrollViewImage()
-
+        configDoubleTapToZoomImage()
 }
     
     
@@ -24,6 +27,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
         imageView = UIImageView(image: selectedImage)
         imageView.contentMode = .scaleAspectFit
         imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+        imageView.isUserInteractionEnabled = true
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 3.0
         scrollView.zoomScale = 1.0
@@ -36,5 +40,18 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    func configDoubleTapToZoomImage(){
+        let doubleTap = UITapGestureRecognizer.init(target: self, action: #selector(self.doubleTapped(recognizer:)))
+        doubleTap.numberOfTapsRequired = 2
+        imageView.addGestureRecognizer(doubleTap)
+        
+    }
+    
+    @objc func doubleTapped(recognizer: UITapGestureRecognizer){
+        print("Tap Working")
+
+    }
+    
     
 }
