@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowImageViewController: UIViewController {
+class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     var selectedImage =  UIImage()
@@ -16,7 +16,7 @@ class ShowImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        scrollView.delegate = self
 
 }
 }
