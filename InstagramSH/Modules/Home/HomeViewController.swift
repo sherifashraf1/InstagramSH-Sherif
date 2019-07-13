@@ -94,6 +94,11 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
         if let indexPath = tableView.indexPathForRow(at: tappedImage){
             print("the (indexPath.row) is: \(indexPath.row)")
             print("the Tapped Image is: \(postImages[indexPath.row])")
+            let showImageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowImageViewController") as! ShowImageViewController
+            showImageViewController.selectedImage = UIImage(named: postImages[indexPath.row])!
+            
+            self.navigationController?.pushViewController(showImageViewController, animated: true)
+            
         }
     }
     

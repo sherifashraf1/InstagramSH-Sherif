@@ -11,7 +11,7 @@ import UIKit
 class ShowImageViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    let selectedImage =  UIImage()
+    var selectedImage =  UIImage()
     var imageView : UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
