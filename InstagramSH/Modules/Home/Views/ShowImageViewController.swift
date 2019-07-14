@@ -13,48 +13,51 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     var selectedImage =  UIImage()
     var imageView : UIImageView!
-    
     var gestureRecognizer: UITapGestureRecognizer!
     
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         configScrollViewImage()
         configDoubleTapToZoomImage()
         //dismissScrollViewImage()
-        dismissImage()
-     
-        
+        dragUpImage()
+        dragDownImage()
+
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        //self.navigationController?.navigationBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
 //    func dismissScrollViewImage(){
 //        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dismissImage(_:)))
 //        view.addGestureRecognizer(gestureRecognizer)
 //    }
 //    @IBAction func dismissImage(_ gesture: UIPanGestureRecognizer) {
-//        let touchPoint = gesture.location(in: self.scrollView)
+//        let touchPoint = gesture.location(in: self.view)
 //        var initialTouchPoint = CGPoint.zero
 //
 //        switch gesture.state {
 //        case .began:
 //            initialTouchPoint = touchPoint
 //        case .changed:
-//            if touchPoint.y > initialTouchPoint.y {
-//                view.frame.origin.y = touchPoint.y - initialTouchPoint.y
+//            if touchPoint.y - initialTouchPoint.y > 0 {
+//                self.view.frame.origin.y = touchPoint.y - initialTouchPoint.y
+//
 //            }
 //        case .ended, .cancelled:
-//            if touchPoint.y - initialTouchPoint.y > 200 {
+//            if touchPoint.y - initialTouchPoint.y > 100 {
 //            self.navigationController?.popViewController(animated: true)
 //            }
 //            else {
-//                UIView.animate(withDuration: 0.2, animations: {
-//                    self.scrollView.frame = CGRect(x: 0,
+//                UIView.animate(withDuration: 0.3, animations: {
+//                    self.view.frame = CGRect(x: 0,
 //                                             y: 0,
 //                                             width: self.view.frame.size.width,
 //                                             height: self.view.frame.size.height)
 //                })
-//                self.navigationController?.popViewController(animated: true)
 //
 //            }
 //        case .failed, .possible:
@@ -64,7 +67,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 //        }
 //    }
 //
-//
+
     
     func configScrollViewImage(){
         imageView = UIImageView(image: selectedImage)
@@ -130,22 +133,40 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 //        self.dismiss(animated: true, completion: nil)
 //    }
     
-    func dismissImage(){
-        let slideDown = UISwipeGestureRecognizer(target: self, action: #selector(dismissView(gesture:)))
+    func dragUpImage(){
+        let slideUp = UISwipeGestureRecognizer(target: self, action: #selector(dragImage(gesture:)))
+        slideUp.direction = .up
+        view.addGestureRecognizer(slideUp)
+    }
+    
+    func dragDownImage(){
+        let slideDown = UISwipeGestureRecognizer(target: self, action: #selector(dragImage(gesture:)))
         slideDown.direction = .down
         view.addGestureRecognizer(slideDown)
     }
-    @objc func dismissView(gesture: UISwipeGestureRecognizer) {
-        UIView.animate(withDuration: 0.5) {
-            if let theWindow = UIApplication.shared.keyWindow {
-                gesture.view?.frame = CGRect(x:theWindow.frame.width , y: theWindow.frame.height , width: 10 , height: 10)
-              self.navigationController?.popViewController(animated: true)
+   
+//    @objc func dragImage(gesture: UISwipeGestureRecognizer) {
+//        UIView.animate(withDuration: 0.3) {
+//            if let window = UIApplication.shared.keyWindow { // keyWindo is the main window that receive an event , in this case it receive the gesture
+//                gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//        }
+//    }
+    
+    @objc func dragImage(gesture: UISwipeGestureRecognizer) {
+        UIView.animate(withDuration: 0.3) {
+            if let window = UIApplication.shared.keyWindow { // keyWindo is the main window that receive an event , in this case it receive the gesture
+                gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
+                self.dismiss(animated: true, completion: nil)
+                //self.navigationController?.popViewController(animated: true)
+                //self.navigationController?.navigationBar.isHidden = false
+                self.tabBarController?.tabBar.isHidden = false
             }
-
         }
-
     }
     
-  
     
+    
+
 }

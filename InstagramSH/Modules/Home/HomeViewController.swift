@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     var postUserName = ["Sherif Ashraf","Osama Ahmed","Ahmed Mohamed","Mahmoud Fekry","Ehab Nagi","Sherif Ahmed" , "Mohamed Gamal","Omar Ahmed"]
     
     
-    
     enum HomeTableSection : CaseIterable{ //CaseIterable is a protocol to use the enum like as array the each case is an indexpath
         case stories                    // indexpath 0
         case newsFeed                   // indexpath 1
@@ -96,8 +95,8 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
             print("the Tapped Image is: \(postImages[indexPath.row])")
             let showImageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowImageViewController") as! ShowImageViewController
             showImageViewController.selectedImage = UIImage(named: postImages[indexPath.row])!
-            
-            self.navigationController?.pushViewController(showImageViewController, animated: true)
+            self.present(showImageViewController, animated: true, completion: nil)
+            //self.navigationController?.pushViewController(showImageViewController, animated: true)
             
         }
     }
