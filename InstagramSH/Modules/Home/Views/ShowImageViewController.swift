@@ -19,10 +19,10 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
         super.viewDidLoad()
         configScrollViewImage()
         configDoubleTapToZoomImage()
-        //dismissScrollViewImage()
         dragUpImage()
         dragDownImage()
-
+      //dismissScrollViewImage()
+      //configPanGesture()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,42 +30,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
         self.tabBarController?.tabBar.isHidden = true
     }
     
-//    func dismissScrollViewImage(){ // this function equal to dragImageFromTop() and dragImageFromBottom()
-//        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dismissImage(_:)))
-//        view.addGestureRecognizer(gestureRecognizer)
-//    }
-//    @IBAction func dismissImage(_ gesture: UIPanGestureRecognizer) {
-//        let touchPoint = gesture.location(in: self.view)
-//        var initialTouchPoint = CGPoint.zero
-//
-//        switch gesture.state {
-//        case .began:
-//            initialTouchPoint = touchPoint
-//        case .changed:
-//            if touchPoint.y - initialTouchPoint.y > 0 {
-//                self.view.frame.origin.y = touchPoint.y - initialTouchPoint.y
-//
-//            }
-//        case .ended, .cancelled:
-//            if touchPoint.y - initialTouchPoint.y > 100 {
-//            self.navigationController?.popViewController(animated: true)
-//            }
-//            else {
-//                UIView.animate(withDuration: 0.3, animations: {
-//                    self.view.frame = CGRect(x: 0,
-//                                             y: 0,
-//                                             width: self.view.frame.size.width,
-//                                             height: self.view.frame.size.height)
-//                })
-//
-//            }
-//        case .failed, .possible:
-//            break
-//        @unknown default:
-//            fatalError("there is an error")
-//        }
-//    }
-//
+
 
     
     func configScrollViewImage(){
@@ -107,6 +72,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 
     }
     
+     // to move image any place in the screen
 //    func configPanGesture(){
 //        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(onClickImage))
 //        imageView.addGestureRecognizer(panGesture)
@@ -119,7 +85,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 //        }
 //        recognizer.setTranslation(CGPoint.zero, in: self.view)
 //    }
-    
+//
     
 
     func dragUpImage(){
@@ -168,9 +134,50 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
             self.tabBarController?.tabBar.isHidden = false
         }
     }
+    
+    
+//    this function equal to dragImageFromTop() and dragImageFromBottom()
+//    func dismissScrollViewImage(){
+//        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dismissImage(_:)))
+//        view.addGestureRecognizer(gestureRecognizer)
+//    }
+//    @IBAction func dismissImage(_ gesture: UIPanGestureRecognizer) {
+//        let touchPoint = gesture.location(in: self.view)
+//        var initialTouchPoint = CGPoint.zero
+//
+//        switch gesture.state {
+//        case .began:
+//            initialTouchPoint = touchPoint
+//        case .changed:
+//            if touchPoint.y - initialTouchPoint.y > 0 {
+//                self.view.frame.origin.y = touchPoint.y - initialTouchPoint.y
+//
+//            }
+//        case .ended, .cancelled:
+//            if touchPoint.y - initialTouchPoint.y > 100 {
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//            else {
+//                UIView.animate(withDuration: 0.3, animations: {
+//                    self.view.frame = CGRect(x: 0,
+//                                             y: 0,
+//                                             width: self.view.frame.size.width,
+//                                             height: self.view.frame.size.height)
+//                })
+//
+//            }
+//        case .failed, .possible:
+//            break
+//        @unknown default:
+//            fatalError("there is an error")
+//        }
+//    }
+//    
+//
+    
 }
 
-extension ShowImageViewController{
+extension ShowImageViewController {
     func showDragHelper(){
         let topCircleOrigin = CGPoint(x: view.bounds.width / 2 , y: 150)
         let topCircleSize = CGSize(width: 30, height: 30)
