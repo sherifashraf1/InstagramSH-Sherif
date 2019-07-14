@@ -27,11 +27,10 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        //self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
     
-//    func dismissScrollViewImage(){
+//    func dismissScrollViewImage(){ // this function equal to dragImageFromTop() and dragImageFromBottom()
 //        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dismissImage(_:)))
 //        view.addGestureRecognizer(gestureRecognizer)
 //    }
@@ -78,6 +77,7 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
         scrollView.maximumZoomScale = 3.0
         scrollView.zoomScale = 1.0
         scrollView.delegate = self
+        view.backgroundColor = .black
         scrollView.backgroundColor = .black
         scrollView.addSubview(imageView)
         view.addSubview(scrollView)
@@ -121,52 +121,57 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
 //    }
     
     
-//    func configDragToDismissImage(){
-//        let doubleTap = UITapGestureRecognizer.init(target: self, action: #selector(self.DragToDismis(recognizer:)))
-//        imageView.addGestureRecognizer(doubleTap)
-//
-//    }
-//
-//    @objc func DragToDismis(recognizer: UITapGestureRecognizer){
-//        print("Tap Working")
-//
-//        self.dismiss(animated: true, completion: nil)
-//    }
-    
+
     func dragUpImage(){
-        let slideUp = UISwipeGestureRecognizer(target: self, action: #selector(dragImage(gesture:)))
+        let slideUp = UISwipeGestureRecognizer(target: self, action: #selector(dragImageFromTop(gesture:)))
         slideUp.direction = .up
         view.addGestureRecognizer(slideUp)
     }
     
     func dragDownImage(){
-        let slideDown = UISwipeGestureRecognizer(target: self, action: #selector(dragImage(gesture:)))
+        let slideDown = UISwipeGestureRecognizer(target: self, action: #selector(dragImageFromBottom(gesture:)))
         slideDown.direction = .down
         view.addGestureRecognizer(slideDown)
     }
    
-//    @objc func dragImage(gesture: UISwipeGestureRecognizer) {
-//        UIView.animate(withDuration: 0.3) {
-//            if let window = UIApplication.shared.keyWindow { // keyWindo is the main window that receive an event , in this case it receive the gesture
-//                gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
-//                self.navigationController?.popViewController(animated: true)
-//            }
-//        }
-//    }
-    
-    @objc func dragImage(gesture: UISwipeGestureRecognizer) {
-        UIView.animate(withDuration: 0.3) {
-            if let window = UIApplication.shared.keyWindow { // keyWindo is the main window that receive an event , in this case it receive the gesture
-                gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
-                self.dismiss(animated: true, completion: nil)
-                //self.navigationController?.popViewController(animated: true)
-                //self.navigationController?.navigationBar.isHidden = false
-                self.tabBarController?.tabBar.isHidden = false
-            }
+    @objc func dragImageFromBottom(gesture: UISwipeGestureRecognizer) {
+        if let window = UIApplication.shared.keyWindow { // keyWindow is the main window that receive an event , in this case it receive the gesture
+            gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
+            let transition: CATransition = CATransition()
+            transition.duration = 0.5
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = CATransitionType.reveal
+            transition.subtype = CATransitionSubtype.fromBottom
+            self.view.window!.layer.add(transition, forKey: nil)
+            self.dismiss(animated: false,
+                         completion: {
+                            self.scrollView.removeFromSuperview()
+            })
+            self.tabBarController?.tabBar.isHidden = false
         }
     }
     
     
+    @objc func dragImageFromTop(gesture: UISwipeGestureRecognizer) {
+        if let window = UIApplication.shared.keyWindow { // keyWindow is the main window that receive an event , in this case it receive the gesture
+            gesture.view?.frame = CGRect(x:window.frame.width  , y: window.frame.height  , width: 5 , height: 5)
+            let transition: CATransition = CATransition()
+            transition.duration = 0.5
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = CATransitionType.reveal
+            transition.subtype = CATransitionSubtype.fromTop
+            self.view.window!.layer.add(transition, forKey: nil)
+            self.dismiss(animated: false,
+                         completion: {
+                            self.scrollView.removeFromSuperview()
+            })
+            self.tabBarController?.tabBar.isHidden = false
+        }
+    }
+
+    
     
 
 }
+
+
