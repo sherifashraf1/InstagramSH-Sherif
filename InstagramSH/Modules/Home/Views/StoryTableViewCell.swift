@@ -45,25 +45,7 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollecti
         }
         return cell
     }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let imageView = UIImageView(image: UIImage(named: storyImages[indexPath.row]))
-//        imageView.frame = self.view.frame
-//        imageView.backgroundColor = .black
-//        imageView.contentMode = .top
-//        imageView.isUserInteractionEnabled = true
-//        
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-//        imageView.addGestureRecognizer(tap)
-//        
-//        self.view.addSubview(imageView)
-//    }
-//    
-//    // Use to back from full mode
-//   @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-//        sender.view?.removeFromSuperview()
-//
-//    }
+
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

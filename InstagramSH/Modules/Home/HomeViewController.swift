@@ -71,10 +71,10 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
             
             cell.userPostImage.isUserInteractionEnabled = true
             cell.userPostImage.isMultipleTouchEnabled = true
-            let tapgesture = UITapGestureRecognizer(target: self, action: #selector(tapImage))
-            tapgesture.numberOfTapsRequired = 1
-            cell.userPostImage.addGestureRecognizer(tapgesture)
-            
+//            let tapgesture = UITapGestureRecognizer(target: self, action: #selector(tapImage))
+//            tapgesture.numberOfTapsRequired = 1
+//            cell.userPostImage.addGestureRecognizer(tapgesture)
+//            
             return cell
             
         case .newsFeedSimple:
@@ -85,6 +85,8 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
         }
         
     }
+    
+    
     
     
     
@@ -111,6 +113,18 @@ extension HomeViewController:  UITableViewDataSource , UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      
+        let section = HomeTableSection.allCases[indexPath.section]
+        switch section {
+        case .newsFeed:
+            let story = UIStoryboard(name: "ImageViewer", bundle: nil)
+            guard let vc = story.instantiateInitialViewController() as? ImageViewer,
+                let image = UIImage(named: postImages[indexPath.row]) else {
+                return
+            }
+            vc.imageToView = image
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
 }
