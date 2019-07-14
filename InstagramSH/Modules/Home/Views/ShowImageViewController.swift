@@ -168,10 +168,34 @@ class ShowImageViewController: UIViewController ,UIScrollViewDelegate {
             self.tabBarController?.tabBar.isHidden = false
         }
     }
-
-    
-    
-
 }
 
+extension ShowImageViewController{
+    func showDragHelper(){
+        let topCircleOrigin = CGPoint(x: view.bounds.width / 2 , y: 150)
+        let topCircleSize = CGSize(width: 30, height: 30)
+        let topCircle = UIView(frame: CGRect(origin: topCircleOrigin, size: topCircleSize))
+        topCircle.layer.cornerRadius = topCircle.frame.width/2
+        topCircle.backgroundColor = UIColor.white
+        topCircle.layer.shadowOpacity = 0.8
+        topCircle.layer.shadowOffset = CGSize()
+        view.addSubview(topCircle)
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0.25,
+            options: [],
+            animations: {
+                topCircle.frame.origin.y += 300
+                topCircle.layer.opacity = 0
+        },
+            completion: { _ in
+                topCircle.removeFromSuperview()
+        }
+        )
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        showDragHelper()
+    }
+}
 
