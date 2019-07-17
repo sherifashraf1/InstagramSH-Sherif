@@ -49,7 +49,7 @@
                                                 <rect key="frame" x="44" y="0.0" width="86" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                 <state key="normal" title="Sherif Ashraf">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -111,7 +111,9 @@
                                                     <constraint firstAttribute="height" constant="24" id="Vwe-5b-Mst"/>
                                                     <constraint firstAttribute="width" constant="24" id="WiB-tv-ZKa"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="like_unselected"/>
+                                                <state key="normal" title="Button" image="like_unselected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-lJ-qCY" userLabel="Comments">
                                                 <rect key="frame" x="40" y="0.0" width="24" height="24"/>
@@ -119,7 +121,9 @@
                                                     <constraint firstAttribute="width" constant="24" id="rjC-ke-Cvu"/>
                                                     <constraint firstAttribute="height" constant="24" id="uHi-1U-sqs"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="comment"/>
+                                                <state key="normal" title="Button" image="comment">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-Mx-TDL" userLabel="Shares">
                                                 <rect key="frame" x="80" y="0.0" width="24" height="24"/>
@@ -127,7 +131,9 @@
                                                     <constraint firstAttribute="height" constant="24" id="KFI-S7-vbM"/>
                                                     <constraint firstAttribute="width" constant="24" id="ORt-ht-ry2"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="telegram"/>
+                                                <state key="normal" title="Button" image="telegram">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -136,7 +142,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyv-CI-IJw" userLabel="ClearView">
                                                 <rect key="frame" x="0.0" y="0.0" width="248" height="24"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-J1-S3z" userLabel="Save">
                                                 <rect key="frame" x="251" y="0.0" width="25" height="24"/>
@@ -144,7 +150,9 @@
                                                     <constraint firstAttribute="height" constant="24" id="0A7-6s-dDk"/>
                                                     <constraint firstAttribute="width" constant="25" id="yn9-VQ-eF7"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="ribbon"/>
+                                                <state key="normal" title="Button" image="ribbon">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -162,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="20"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="125 Likes">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my first post in Instagram, And i'm very happy to join it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql7-wa-U27">
@@ -171,7 +179,7 @@
                                             <constraint firstAttribute="height" constant="20" id="w5l-Zv-nQg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -210,14 +218,14 @@
                                                 <rect key="frame" x="0.0" y="3" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="😂">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-9Z-8rv">
                                                 <rect key="frame" x="30" y="3" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="❤️">
-                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-gj-IdQ" userLabel="plus">
@@ -227,7 +235,7 @@
                                                     <constraint firstAttribute="width" constant="30" id="wTl-AU-bV9"/>
                                                 </constraints>
                                                 <state key="normal" title="⊕">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -240,7 +248,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-gH-MNs">
                                 <rect key="frame" x="0.0" y="135" width="23" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -256,6 +264,7 @@
                         </constraints>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="IlP-Qr-7Eg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2rk-hL-RBA"/>
                     <constraint firstAttribute="trailing" secondItem="IlP-Qr-7Eg" secondAttribute="trailing" id="H3x-bT-GPT"/>
