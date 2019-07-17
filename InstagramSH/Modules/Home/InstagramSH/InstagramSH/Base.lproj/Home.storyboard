@@ -20,7 +20,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="doP-9X-Qsj">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" rowHeight="147" id="KoH-tc-g2W" customClass="StoryTableViewCell" customModule="InstagramSH" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="147"/>
@@ -31,7 +31,7 @@
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JM0-GH-gU5">
                                                     <rect key="frame" x="0.0" y="5" width="414" height="115"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="115" id="GwI-mG-dVY"/>
                                                     </constraints>
@@ -64,7 +64,7 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                         <state key="normal" title="Your Story">
-                                                                            <color key="titleColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-rn-OZq" userLabel="AddStoryButton">
@@ -73,7 +73,9 @@
                                                                             <constraint firstAttribute="height" constant="20" id="tWW-5E-aj9"/>
                                                                             <constraint firstAttribute="width" constant="20" id="tXz-f7-rHg"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button" image="AddStory"/>
+                                                                        <state key="normal" title="Button" image="AddStory">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
                                                                     </button>
                                                                 </subviews>
                                                             </view>
@@ -94,6 +96,7 @@
                                                     </cells>
                                                 </collectionView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="JM0-GH-gU5" firstAttribute="top" secondItem="BTz-Tz-mg0" secondAttribute="top" constant="5" id="Su5-DC-CbF"/>
                                                 <constraint firstAttribute="trailing" secondItem="JM0-GH-gU5" secondAttribute="trailing" id="fry-3k-c61"/>
