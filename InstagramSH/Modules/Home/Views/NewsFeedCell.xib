@@ -111,6 +111,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="Vwe-5b-Mst"/>
                                                     <constraint firstAttribute="width" constant="24" id="WiB-tv-ZKa"/>
                                                 </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button" image="like_unselected">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -121,6 +122,7 @@
                                                     <constraint firstAttribute="width" constant="24" id="rjC-ke-Cvu"/>
                                                     <constraint firstAttribute="height" constant="24" id="uHi-1U-sqs"/>
                                                 </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button" image="comment">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -150,7 +152,8 @@
                                                     <constraint firstAttribute="height" constant="24" id="0A7-6s-dDk"/>
                                                     <constraint firstAttribute="width" constant="25" id="yn9-VQ-eF7"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="ribbon">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="ribbon">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
