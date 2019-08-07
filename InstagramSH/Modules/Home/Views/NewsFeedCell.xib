@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="644" id="KGk-i7-Jjw" customClass="NewsFeedCell" customModule="InstagramSH" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="643.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-Qr-7Eg" userLabel="HeadreAndPostImageStackView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmf-ik-Wfy" userLabel="buttomLineView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="D3O-RA-1g5"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="OOs-HX-0bu" userLabel="HeaderStackView">
+                                <rect key="frame" x="10" y="6" width="394" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-tn-7z2">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amr_diab" translatesAutoresizingMaskIntoConstraints="NO" id="GxA-Jq-rXs">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="TsU-lK-Seq"/>
+                                                    <constraint firstAttribute="height" constant="36" id="uYE-Pk-QTw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="18"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-l6-9La">
+                                                <rect key="frame" x="44" y="0.0" width="86" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="Sherif Ashraf">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="k8C-l6-9La" firstAttribute="height" secondItem="GxA-Jq-rXs" secondAttribute="height" id="dRZ-RV-Frt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sm2-oB-IwR">
+                                        <rect key="frame" x="148" y="0.0" width="246" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-nW-Wht" userLabel="BlankView">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEh-Et-M6k" userLabel="ThreeDotsButton">
+                                                <rect key="frame" x="216" y="0.0" width="30" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="UXy-Xh-snG"/>
+                                                    <constraint firstAttribute="width" constant="30" id="in4-2V-EKK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                                <state key="normal" title="···">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="XwJ-Ne-AoH" userLabel="postImage">
+                                <rect key="frame" x="0.0" y="47" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="LtR-9j-XTO"/>
+                                    <constraint firstAttribute="height" constant="414" id="eGf-sB-dkM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="XwJ-Ne-AoH" firstAttribute="top" secondItem="OOs-HX-0bu" secondAttribute="bottom" constant="5" id="8OC-C2-dDF"/>
+                            <constraint firstItem="OOs-HX-0bu" firstAttribute="leading" secondItem="IlP-Qr-7Eg" secondAttribute="leading" constant="10" id="FuW-4B-UTp"/>
+                            <constraint firstItem="kmf-ik-Wfy" firstAttribute="leading" secondItem="IlP-Qr-7Eg" secondAttribute="leading" id="Mky-TK-doL"/>
+                            <constraint firstAttribute="trailing" secondItem="kmf-ik-Wfy" secondAttribute="trailing" id="YuH-YP-s4K"/>
+                            <constraint firstItem="kmf-ik-Wfy" firstAttribute="top" secondItem="IlP-Qr-7Eg" secondAttribute="top" id="mbv-SP-eQ6"/>
+                            <constraint firstAttribute="trailing" secondItem="OOs-HX-0bu" secondAttribute="trailing" constant="10" id="qzx-Cy-AEu"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D9D-60-O8j">
+                        <rect key="frame" x="10" y="473" width="394" height="158.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="0kh-Qa-z6l" userLabel="likeAndSave">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="24"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-Mp-FRL" userLabel="LikeAndCommentAndShareStack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l6-8P-d0R" userLabel="likes">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Vwe-5b-Mst"/>
+                                                    <constraint firstAttribute="width" constant="24" id="WiB-tv-ZKa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="like_unselected"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-lJ-qCY" userLabel="Comments">
+                                                <rect key="frame" x="40" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="rjC-ke-Cvu"/>
+                                                    <constraint firstAttribute="height" constant="24" id="uHi-1U-sqs"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="comment"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-Mx-TDL" userLabel="Shares">
+                                                <rect key="frame" x="80" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="KFI-S7-vbM"/>
+                                                    <constraint firstAttribute="width" constant="24" id="ORt-ht-ry2"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="telegram"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="tWB-Mh-eSy" userLabel="ClearViewAndSaveButtonStack View">
+                                        <rect key="frame" x="118" y="0.0" width="276" height="24"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyv-CI-IJw" userLabel="ClearView">
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="24"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-J1-S3z" userLabel="Save">
+                                                <rect key="frame" x="251" y="0.0" width="25" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="0A7-6s-dDk"/>
+                                                    <constraint firstAttribute="width" constant="25" id="yn9-VQ-eF7"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="ribbon"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="QbI-J1-S3z" secondAttribute="bottom" id="4Fv-JB-5tk"/>
+                                            <constraint firstItem="QbI-J1-S3z" firstAttribute="top" secondItem="tWB-Mh-eSy" secondAttribute="top" id="4UA-kW-EHf"/>
+                                            <constraint firstAttribute="trailing" secondItem="QbI-J1-S3z" secondAttribute="trailing" id="rxc-lk-ikm"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ogE-1B-YP0" userLabel="NumberOfLikesAnd CaptionStackView">
+                                <rect key="frame" x="0.0" y="34" width="361" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT0-iH-bQg">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="125 Likes">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my first post in Instagram, And i'm very happy to join it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql7-wa-U27">
+                                        <rect key="frame" x="0.0" y="25" width="361" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="w5l-Zv-nQg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jKi-Kc-D1P">
+                                <rect key="frame" x="0.0" y="89" width="394" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-1s-SAv" userLabel="ProfilePicAnd Add commentStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sherif" translatesAutoresizingMaskIntoConstraints="NO" id="23B-zW-Vnz" userLabel="AccontProfilePic">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="iJN-yU-VgO"/>
+                                                    <constraint firstAttribute="height" constant="36" id="zEe-Q1-Q3b"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="18"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaR-YL-Mh1">
+                                                <rect key="frame" x="44" y="0.0" width="250" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="moE-A5-NVR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-tf-H93" userLabel="EmojiStackView">
+                                        <rect key="frame" x="304" y="0.0" width="90" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31s-mL-55h">
+                                                <rect key="frame" x="0.0" y="3" width="30" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="😂">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-9Z-8rv">
+                                                <rect key="frame" x="30" y="3" width="30" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="❤️">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="760" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-gj-IdQ" userLabel="plus">
+                                                <rect key="frame" x="60" y="1" width="30" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="U5I-Ff-HZj"/>
+                                                    <constraint firstAttribute="width" constant="30" id="wTl-AU-bV9"/>
+                                                </constraints>
+                                                <state key="normal" title="⊕">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gXa-tf-H93" firstAttribute="leading" secondItem="OaR-YL-Mh1" secondAttribute="trailing" constant="10" id="OtY-7f-RvJ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-gH-MNs">
+                                <rect key="frame" x="0.0" y="135" width="23" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0kh-Qa-z6l" firstAttribute="leading" secondItem="D9D-60-O8j" secondAttribute="leading" id="7WP-c5-njz"/>
+                            <constraint firstItem="jKi-Kc-D1P" firstAttribute="top" secondItem="ogE-1B-YP0" secondAttribute="bottom" constant="10" id="Fc4-zE-t3H"/>
+                            <constraint firstItem="Hol-gH-MNs" firstAttribute="top" secondItem="jKi-Kc-D1P" secondAttribute="bottom" constant="10" id="NXT-fs-Jtd"/>
+                            <constraint firstAttribute="trailing" secondItem="0kh-Qa-z6l" secondAttribute="trailing" id="Rvf-tK-b3u"/>
+                            <constraint firstItem="ogE-1B-YP0" firstAttribute="top" secondItem="0kh-Qa-z6l" secondAttribute="bottom" constant="10" id="p2V-1X-Ifn"/>
+                            <constraint firstItem="jKi-Kc-D1P" firstAttribute="leading" secondItem="D9D-60-O8j" secondAttribute="leading" id="qKk-GP-W1s"/>
+                            <constraint firstItem="0kh-Qa-z6l" firstAttribute="top" secondItem="D9D-60-O8j" secondAttribute="top" id="v0q-PV-zmY"/>
+                            <constraint firstAttribute="trailing" secondItem="jKi-Kc-D1P" secondAttribute="trailing" id="wcX-xX-X94"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IlP-Qr-7Eg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2rk-hL-RBA"/>
+                    <constraint firstAttribute="trailing" secondItem="IlP-Qr-7Eg" secondAttribute="trailing" id="H3x-bT-GPT"/>
+                    <constraint firstItem="D9D-60-O8j" firstAttribute="top" secondItem="IlP-Qr-7Eg" secondAttribute="bottom" constant="12" id="V9T-bA-Vhl"/>
+                    <constraint firstAttribute="bottom" secondItem="D9D-60-O8j" secondAttribute="bottom" constant="12" id="VJN-oC-yUV"/>
+                    <constraint firstItem="IlP-Qr-7Eg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YE6-ae-CBv"/>
+                    <constraint firstAttribute="trailing" secondItem="D9D-60-O8j" secondAttribute="trailing" constant="10" id="ayH-jg-VW1"/>
+                    <constraint firstItem="D9D-60-O8j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sXY-gT-9Em"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accountProfilePicture" destination="23B-zW-Vnz" id="DEX-rz-EVI"/>
+                <outlet property="addCommentTextView" destination="OaR-YL-Mh1" id="Yl3-46-xxs"/>
+                <outlet property="commentButton" destination="XcS-lJ-qCY" id="PWl-v2-mrk"/>
+                <outlet property="heartEmojiCommentButton" destination="qm1-9Z-8rv" id="ePT-Cc-AL4"/>
+                <outlet property="likeButton" destination="3l6-8P-d0R" id="dH5-78-LYx"/>
+                <outlet property="numberOfLikesButton" destination="sT0-iH-bQg" id="N0q-Bw-OJh"/>
+                <outlet property="plusEmojiCommentButton" destination="Rah-gj-IdQ" id="J0J-uY-RcB"/>
+                <outlet property="postCaptionLabel" destination="Ql7-wa-U27" id="LvX-Hy-qDG"/>
+                <outlet property="saveButton" destination="QbI-J1-S3z" id="GuP-Zc-nHs"/>
+                <outlet property="shareButton" destination="lmt-Mx-TDL" id="eAg-Yb-X8B"/>
+                <outlet property="smileEmojiCommentButton" destination="31s-mL-55h" id="uCI-YV-1B8"/>
+                <outlet property="threeDotsButton" destination="WEh-Et-M6k" id="zJ5-Ar-jBE"/>
+                <outlet property="timeAgoLabel" destination="Hol-gH-MNs" id="38s-ri-xC2"/>
+                <outlet property="userNamePostButton" destination="k8C-l6-9La" id="2Wf-EQ-2E2"/>
+                <outlet property="userPostImage" destination="XwJ-Ne-AoH" id="ShP-c9-8qe"/>
+                <outlet property="userProfilePicture" destination="GxA-Jq-rXs" id="BuF-Bh-i1Q"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="224.33035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="amr_diab" width="211.5" height="169"/>
+        <image name="comment" width="22" height="19"/>
+        <image name="like_unselected" width="22" height="18.5"/>
+        <image name="post" width="1536" height="2048"/>
+        <image name="ribbon" width="18.5" height="26"/>
+        <image name="sherif" width="349.5" height="349.5"/>
+        <image name="telegram" width="25" height="25"/>
+    </resources>
+</document>

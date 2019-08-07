@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9o-RQ-Klg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instagram-->
+        <scene sceneID="YrJ-qt-YaZ">
+            <objects>
+                <viewController storyboardIdentifier="InstagramHome" id="yf8-T7-wgn" customClass="HomeViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdU-qH-OP2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="doP-9X-Qsj">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" rowHeight="147" id="KoH-tc-g2W" customClass="StoryTableViewCell" customModule="InstagramSH" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KoH-tc-g2W" id="BTz-Tz-mg0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JM0-GH-gU5">
+                                                    <rect key="frame" x="0.0" y="5" width="414" height="115"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="115" id="GwI-mG-dVY"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zoi-ct-G6N">
+                                                        <size key="itemSize" width="90" height="111"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="3g7-Q1-S8m" customClass="StoryCollectionViewCell" customModule="InstagramSH" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="90" height="111"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="111"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sherif" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-8a-f8n">
+                                                                        <rect key="frame" x="5" y="11" width="80" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="80" id="58f-2A-Fk8"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="c74-KB-rJQ"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-6b-PmQ">
+                                                                        <rect key="frame" x="5" y="96" width="80" height="10"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="80" id="Pic-aL-Zw3"/>
+                                                                            <constraint firstAttribute="height" constant="10" id="hu1-sZ-7M0"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                        <state key="normal" title="Your Story">
+                                                                            <color key="titleColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-rn-OZq" userLabel="AddStoryButton">
+                                                                        <rect key="frame" x="63" y="71" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="tWW-5E-aj9"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="tXz-f7-rHg"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button" image="AddStory"/>
+                                                                    </button>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Gtj-rn-OZq" secondAttribute="trailing" constant="7" id="0mC-gv-Shy"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="7dF-8a-f8n" secondAttribute="bottom" constant="5" id="2Xh-le-nl4"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="top" secondItem="Gtj-rn-OZq" secondAttribute="bottom" constant="5" id="66D-7M-kl5"/>
+                                                                <constraint firstAttribute="bottom" secondItem="pEK-6b-PmQ" secondAttribute="bottom" constant="5" id="dBP-5W-Fjg"/>
+                                                                <constraint firstItem="7dF-8a-f8n" firstAttribute="centerX" secondItem="3g7-Q1-S8m" secondAttribute="centerX" id="oq4-6q-37R"/>
+                                                                <constraint firstItem="pEK-6b-PmQ" firstAttribute="centerX" secondItem="3g7-Q1-S8m" secondAttribute="centerX" id="rDa-cI-pEA"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="addStoryButton" destination="Gtj-rn-OZq" id="dj9-0o-rZI"/>
+                                                                <outlet property="storyButton" destination="pEK-6b-PmQ" id="06f-uE-AX2"/>
+                                                                <outlet property="storyImage" destination="7dF-8a-f8n" id="v6c-SP-Fsy"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="top" secondItem="BTz-Tz-mg0" secondAttribute="top" constant="5" id="Su5-DC-CbF"/>
+                                                <constraint firstAttribute="trailing" secondItem="JM0-GH-gU5" secondAttribute="trailing" id="fry-3k-c61"/>
+                                                <constraint firstAttribute="bottom" secondItem="JM0-GH-gU5" secondAttribute="bottom" constant="5" id="gA8-hZ-e3l"/>
+                                                <constraint firstItem="JM0-GH-gU5" firstAttribute="leading" secondItem="BTz-Tz-mg0" secondAttribute="leading" id="ssa-C3-61H"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="JM0-GH-gU5" id="Sys-Zy-ISo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="doP-9X-Qsj" firstAttribute="leading" secondItem="UBa-VG-qHv" secondAttribute="leading" id="fJX-li-TYe"/>
+                            <constraint firstItem="doP-9X-Qsj" firstAttribute="top" secondItem="UBa-VG-qHv" secondAttribute="top" id="gkE-2i-lzo"/>
+                            <constraint firstItem="UBa-VG-qHv" firstAttribute="bottom" secondItem="doP-9X-Qsj" secondAttribute="bottom" id="jfD-h0-sLE"/>
+                            <constraint firstItem="UBa-VG-qHv" firstAttribute="trailing" secondItem="doP-9X-Qsj" secondAttribute="trailing" id="t4S-6r-KIn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UBa-VG-qHv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Instagram" id="JGD-rF-WSm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="camera3" width="50" id="MFx-b0-HvZ">
+                            <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="telegram" width="50" id="4iw-1w-1vi">
+                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="tvshot" width="50" id="h5Z-nL-1Ve">
+                                <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="doP-9X-Qsj" id="5cC-VI-NPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QY1-Ae-q3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1065.217391304348" y="562.5"/>
+        </scene>
+        <!--Show Image View Controller-->
+        <scene sceneID="V5M-DB-lLm">
+            <objects>
+                <viewController storyboardIdentifier="ShowImageViewController" id="6Li-hm-BpF" customClass="ShowImageViewController" customModule="InstagramSH" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gPo-mK-L5u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-GI-fmS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gSo-GI-fmS" firstAttribute="top" secondItem="sSI-al-TMB" secondAttribute="top" id="AVd-fd-Ag9"/>
+                            <constraint firstItem="gSo-GI-fmS" firstAttribute="leading" secondItem="sSI-al-TMB" secondAttribute="leading" id="U9K-N1-x24"/>
+                            <constraint firstItem="sSI-al-TMB" firstAttribute="trailing" secondItem="gSo-GI-fmS" secondAttribute="trailing" id="jPe-C3-26b"/>
+                            <constraint firstItem="sSI-al-TMB" firstAttribute="bottom" secondItem="gSo-GI-fmS" secondAttribute="bottom" id="n5p-Zd-ohp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sSI-al-TMB"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="gSo-GI-fmS" id="rIm-CZ-YNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l27-85-cyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-272" y="564"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zei-xa-r7V">
+            <objects>
+                <navigationController storyboardIdentifier="HomeBarNav" automaticallyAdjustsScrollViewInsets="NO" id="b9o-RQ-Klg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home_unselected" selectedImage="home_selected" id="5DU-cb-fuM" userLabel="HomeItem">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NIG-9I-11l">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yf8-T7-wgn" kind="relationship" relationship="rootViewController" id="t0x-YU-hS2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Wa-XR-HVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1967" y="563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddStory" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="camera3" width="22" height="19"/>
+        <image name="home_selected" width="22" height="22"/>
+        <image name="home_unselected" width="22" height="22"/>
+        <image name="sherif" width="349.66665649414062" height="349.66665649414062"/>
+        <image name="telegram" width="25" height="25"/>
+        <image name="tvshot" width="25" height="25"/>
+    </resources>
+</document>
