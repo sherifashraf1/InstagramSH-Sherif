@@ -111,7 +111,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="Vwe-5b-Mst"/>
                                                     <constraint firstAttribute="width" constant="24" id="WiB-tv-ZKa"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="like_unselected"/>
+                                                <state key="normal" image="like_unselected"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-lJ-qCY" userLabel="Comments">
                                                 <rect key="frame" x="40" y="0.0" width="24" height="24"/>
@@ -119,7 +119,7 @@
                                                     <constraint firstAttribute="width" constant="24" id="rjC-ke-Cvu"/>
                                                     <constraint firstAttribute="height" constant="24" id="uHi-1U-sqs"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="comment"/>
+                                                <state key="normal" image="comment"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-Mx-TDL" userLabel="Shares">
                                                 <rect key="frame" x="80" y="0.0" width="24" height="24"/>
@@ -127,7 +127,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="KFI-S7-vbM"/>
                                                     <constraint firstAttribute="width" constant="24" id="ORt-ht-ry2"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="telegram"/>
+                                                <state key="normal" image="telegram"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,7 +144,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="0A7-6s-dDk"/>
                                                     <constraint firstAttribute="width" constant="25" id="yn9-VQ-eF7"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="ribbon"/>
+                                                <state key="normal" image="ribbon"/>
                                             </button>
                                         </subviews>
                                         <constraints>
